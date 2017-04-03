@@ -1,0 +1,466 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	snippets/migrations/0001_initial.py	1;"	kind:file	line:1
+0002_auto_20170208_2231.py	snippets/migrations/0002_auto_20170208_2231.py	1;"	kind:file	line:1
+0003_auto_20170208_2246.py	snippets/migrations/0003_auto_20170208_2246.py	1;"	kind:file	line:1
+0004_auto_20170209_1715.py	snippets/migrations/0004_auto_20170209_1715.py	1;"	kind:file	line:1
+ALLOWED_HOSTS	tutorial/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	kind:variable	line:175
+APIView	snippets/views2.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:9
+APIView	tutorial/swagger.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:7
+API_NAME	tutorial/settings.py	/^API_NAME = 'My Web API'$/;"	kind:variable	line:232
+AUTHENTICATION_BACKENDS	tutorial/settings.py	/^AUTHENTICATION_BACKENDS = [$/;"	kind:variable	line:59
+AUTH_PASSWORD_VALIDATORS	tutorial/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:135
+AllowAny	tutorial/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
+ApiAdminConfig	apiAdmin/apps.py	/^class ApiAdminConfig(AppConfig):$/;"	kind:class	line:4
+AppConfig	apiAdmin/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	experiments/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	snippets/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+BASE_DIR	tutorial/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:18
+CORS_ORIGIN_ALLOW_ALL	tutorial/settings.py	/^CORS_ORIGIN_ALLOW_ALL = True$/;"	kind:variable	line:82
+CsrfExemptMixin	apiAdmin/views_oauth2.py	/^from braces.views import CsrfExemptMixin$/;"	kind:namespace	line:7
+DATABASES	tutorial/settings.py	/^DATABASES = {$/;"	kind:variable	line:124
+DEBUG	tutorial/settings.py	/^DEBUG = os.environ.get('DEBUG') == 'True'$/;"	kind:variable	line:33
+DefaultRouter	apiAdmin/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:2
+DefaultRouter	experiments/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:3
+DjangoWhiteNoise	tutorial/wsgi.py	/^from whitenoise.django import DjangoWhiteNoise$/;"	kind:namespace	line:13
+ExperimentsConfig	experiments/apps.py	/^class ExperimentsConfig(AppConfig):$/;"	kind:class	line:4
+FileWrapper	experiments/views_file.py	/^from wsgiref.util import FileWrapper$/;"	kind:namespace	line:8
+Group	apiAdmin/serializers.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:5
+Group	apiAdmin/views.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:4
+GroupSerializer	apiAdmin/serializers.py	/^class GroupSerializer(serializers.ModelSerializer):$/;"	kind:class	line:15
+GroupSerializer	apiAdmin/views.py	/^from apiAdmin.serializers import SignUpSerializer, UserSerializer, GroupSerializer$/;"	kind:namespace	line:17
+GroupViewSet	apiAdmin/views.py	/^class GroupViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:50
+HtmlFormatter	snippets/models.py	/^from pygments.formatters.html import HtmlFormatter$/;"	kind:namespace	line:8
+Http404	experiments/views_calculator.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:4
+Http404	experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
+Http404	snippets/views0.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:5
+Http404	snippets/views2.py	/^from django.http import Http404$/;"	kind:namespace	line:6
+HttpResponse	experiments/views_calculator.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:4
+HttpResponse	experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
+HttpResponse	snippets/views0.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:5
+INSTALLED_APPS	tutorial/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:38
+IsAdminUser	tutorial/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
+IsAuthenticatedOrCreate	apiAdmin/views.py	/^from security.permissions import IsAuthenticatedOrCreate$/;"	kind:namespace	line:15
+IsAuthenticatedOrCreate	security/permissions.py	/^class IsAuthenticatedOrCreate(permissions.IsAuthenticated):$/;"	kind:class	line:19
+IsOwnerOrReadOnly	security/permissions.py	/^class IsOwnerOrReadOnly(permissions.BasePermission):$/;"	kind:class	line:4
+IsOwnerOrReadOnly	snippets/views.py	/^from security.permissions import IsOwnerOrReadOnly$/;"	kind:namespace	line:18
+IsOwnerOrReadOnly	snippets/views0.py	/^from security.permissions import IsOwnerOrReadOnly$/;"	kind:namespace	line:12
+IsOwnerOrReadOnly	snippets/views1.py	/^from security.permissions import IsOwnerOrReadOnly$/;"	kind:namespace	line:13
+IsOwnerOrReadOnly	snippets/views2.py	/^from security.permissions import IsOwnerOrReadOnly$/;"	kind:namespace	line:14
+IsOwnerOrReadOnly	snippets/views3.py	/^from security.permissions import IsOwnerOrReadOnly$/;"	kind:namespace	line:12
+IsOwnerOrReadOnly	snippets/views4.py	/^from security.permissions import IsOwnerOrReadOnly$/;"	kind:namespace	line:11
+JSONRenderer	snippets/views0.py	/^from rest_framework.renderers import JSONRenderer$/;"	kind:namespace	line:7
+JSONResponse	snippets/views0.py	/^class JSONResponse(HttpResponse):$/;"	kind:class	line:15
+LANGUAGE_CHOICES	snippets/models.py	/^LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])$/;"	kind:variable	line:12
+LANGUAGE_CHOICES	snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
+LANGUAGE_CODE	tutorial/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:154
+LEXERS	snippets/models.py	/^LEXERS = [item for item in get_all_lexers() if item[1]]$/;"	kind:variable	line:11
+LOGIN_REDIRECT_URL	tutorial/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:214
+LOGIN_URL	tutorial/settings.py	/^LOGIN_URL = 'rest_framework:login'$/;"	kind:variable	line:212
+LOGOUT_URL	tutorial/settings.py	/^LOGOUT_URL = 'rest_framework:logout'$/;"	kind:variable	line:213
+MIDDLEWARE	tutorial/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:65
+Meta	apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:10
+Meta	apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:17
+Meta	apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:24
+Meta	snippets/models.py	/^    class Meta:$/;"	kind:class	line:43
+Meta	snippets/serializers.py	/^    class Meta:$/;"	kind:class	line:14
+Meta	snippets/serializers.py	/^    class Meta:$/;"	kind:class	line:54
+Migration	snippets/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	snippets/migrations/0002_auto_20170208_2231.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	snippets/migrations/0003_auto_20170208_2246.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	snippets/migrations/0004_auto_20170209_1715.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+OAUTH2_PROVIDER	tutorial/settings.py	/^OAUTH2_PROVIDER = {$/;"	kind:variable	line:227
+OAuth2PasswordAccessTokenRequestFields	apiAdmin/serializers.py	/^class OAuth2PasswordAccessTokenRequestFields(object):$/;"	kind:class	line:31
+OAuth2PasswordAccessTokenRequestFieldsSerializer	apiAdmin/serializers.py	/^class OAuth2PasswordAccessTokenRequestFieldsSerializer(serializers.Serializer):$/;"	kind:class	line:42
+OAuth2PasswordAccessTokenRequestFieldsSerializer	apiAdmin/views_oauth2.py	/^from .serializers import OAuth2PasswordAccessTokenRequestFieldsSerializer$/;"	kind:namespace	line:17
+OAuthLibCore	apiAdmin/views_oauth2.py	/^from oauth2_provider.oauth2_backends import OAuthLibCore$/;"	kind:namespace	line:8
+OAuthLibMixin	apiAdmin/views_oauth2.py	/^from oauth2_provider.views.mixins import OAuthLibMixin$/;"	kind:namespace	line:10
+PROJECT_ROOT	tutorial/settings.py	/^PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))$/;"	kind:variable	line:19
+REST_FRAMEWORK	tutorial/settings.py	/^REST_FRAMEWORK = {$/;"	kind:variable	line:217
+ROOT_URLCONF	tutorial/settings.py	/^ROOT_URLCONF = 'tutorial.urls'$/;"	kind:variable	line:84
+RedirectView	apiAdmin/urls.py	/^from django.views.generic import RedirectView$/;"	kind:namespace	line:3
+Response	apiAdmin/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
+Response	apiAdmin/views_oauth2.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:14
+Response	snippets/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:9
+Response	snippets/views1.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
+Response	snippets/views2.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
+Response	tutorial/swagger.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:5
+SECRET_KEY	tutorial/settings.py	/^    SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:27
+SECURE_PROXY_SSL_HEADER	tutorial/settings.py	/^SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')$/;"	kind:variable	line:172
+STATICFILES_DIRS	tutorial/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:184
+STATICFILES_STORAGE	tutorial/settings.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:191
+STATIC_ROOT	tutorial/settings.py	/^STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')$/;"	kind:variable	line:180
+STATIC_URL	tutorial/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:181
+STYLE_CHOICES	snippets/models.py	/^STYLE_CHOICES = sorted((item, item) for item in get_all_styles())$/;"	kind:variable	line:13
+STYLE_CHOICES	snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
+SWAGGER_SETTINGS	tutorial/settings.py	/^SWAGGER_SETTINGS = {$/;"	kind:variable	line:194
+SchemaGenerator	tutorial/swagger.py	/^from rest_framework.schemas import SchemaGenerator$/;"	kind:namespace	line:6
+SignUp	apiAdmin/views.py	/^class SignUp(generics.CreateAPIView):$/;"	kind:class	line:31
+SignUpSerializer	apiAdmin/serializers.py	/^class SignUpSerializer(serializers.ModelSerializer):$/;"	kind:class	line:22
+SignUpSerializer	apiAdmin/views.py	/^from apiAdmin.serializers import SignUpSerializer, UserSerializer, GroupSerializer$/;"	kind:namespace	line:17
+SimpleRouter	apiAdmin/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:2
+SimpleRouter	experiments/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:3
+Snippet	snippets/models.py	/^class Snippet(models.Model):$/;"	kind:class	line:16
+Snippet	snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
+Snippet	snippets/views.py	/^from snippets.models import Snippet$/;"	kind:namespace	line:15
+Snippet	snippets/views0.py	/^from snippets.models import Snippet$/;"	kind:namespace	line:10
+Snippet	snippets/views1.py	/^from snippets.models import Snippet$/;"	kind:namespace	line:11
+Snippet	snippets/views2.py	/^from snippets.models import Snippet$/;"	kind:namespace	line:12
+Snippet	snippets/views3.py	/^from snippets.models import Snippet$/;"	kind:namespace	line:10
+Snippet	snippets/views4.py	/^from snippets.models import Snippet$/;"	kind:namespace	line:9
+SnippetDetail	snippets/views.py	/^class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):$/;"	kind:class	line:33
+SnippetDetail	snippets/views2.py	/^class SnippetDetail(APIView):$/;"	kind:class	line:39
+SnippetDetail	snippets/views3.py	/^                    generics.GenericAPIView):$/;"	kind:class	line:35
+SnippetDetail	snippets/views4.py	/^class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):$/;"	kind:class	line:23
+SnippetHighlight	snippets/views.py	/^class SnippetHighlight(generics.GenericAPIView):$/;"	kind:class	line:55
+SnippetList	snippets/views.py	/^class SnippetList(generics.ListCreateAPIView):$/;"	kind:class	line:21
+SnippetList	snippets/views2.py	/^class SnippetList(APIView):$/;"	kind:class	line:17
+SnippetList	snippets/views3.py	/^                  generics.GenericAPIView):$/;"	kind:class	line:17
+SnippetList	snippets/views4.py	/^class SnippetList(generics.ListCreateAPIView):$/;"	kind:class	line:14
+SnippetSerializer	snippets/serializers.py	/^class SnippetSerializer(serializers.HyperlinkedModelSerializer):$/;"	kind:class	line:9
+SnippetSerializer	snippets/views.py	/^from snippets.serializers import SnippetSerializer$/;"	kind:namespace	line:16
+SnippetSerializer	snippets/views0.py	/^from snippets.serializers import SnippetSerializer$/;"	kind:namespace	line:11
+SnippetSerializer	snippets/views1.py	/^from snippets.serializers import SnippetSerializer$/;"	kind:namespace	line:12
+SnippetSerializer	snippets/views2.py	/^from snippets.serializers import SnippetSerializer$/;"	kind:namespace	line:13
+SnippetSerializer	snippets/views3.py	/^from snippets.serializers import SnippetSerializer$/;"	kind:namespace	line:11
+SnippetSerializer	snippets/views4.py	/^from snippets.serializers import SnippetSerializer$/;"	kind:namespace	line:10
+SnippetsConfig	snippets/apps.py	/^class SnippetsConfig(AppConfig):$/;"	kind:class	line:4
+StreamingHttpResponse	experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
+SwaggerSchemaView	tutorial/swagger.py	/^class SwaggerSchemaView(APIView):$/;"	kind:class	line:11
+TEMPLATES	tutorial/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:86
+TIME_ZONE	tutorial/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:156
+TestCase	apiAdmin/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	experiments/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	snippets/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TokenHasReadWriteScope	apiAdmin/views.py	/^from oauth2_provider.ext.rest_framework import TokenHasReadWriteScope, TokenHasScope$/;"	kind:namespace	line:13
+TokenHasScope	apiAdmin/views.py	/^from oauth2_provider.ext.rest_framework import TokenHasReadWriteScope, TokenHasScope$/;"	kind:namespace	line:13
+USE_I18N	tutorial/settings.py	/^USE_I18N = True$/;"	kind:variable	line:158
+USE_L10N	tutorial/settings.py	/^USE_L10N = True$/;"	kind:variable	line:160
+USE_TZ	tutorial/settings.py	/^USE_TZ = True$/;"	kind:variable	line:162
+User	apiAdmin/serializers.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:5
+User	apiAdmin/views.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:4
+User	snippets/serializers.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:6
+User	snippets/views.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:13
+UserDetail	snippets/views.py	/^class UserDetail(generics.RetrieveAPIView):$/;"	kind:class	line:48
+UserList	snippets/views.py	/^class UserList(generics.ListAPIView):$/;"	kind:class	line:41
+UserSerializer	apiAdmin/serializers.py	/^class UserSerializer(serializers.ModelSerializer):$/;"	kind:class	line:8
+UserSerializer	apiAdmin/views.py	/^from apiAdmin.serializers import SignUpSerializer, UserSerializer, GroupSerializer$/;"	kind:namespace	line:17
+UserSerializer	snippets/serializers.py	/^class UserSerializer(serializers.HyperlinkedModelSerializer):$/;"	kind:class	line:49
+UserSerializer	snippets/views.py	/^from snippets.serializers import UserSerializer$/;"	kind:namespace	line:17
+UserViewSet	apiAdmin/views.py	/^class UserViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:40
+WSGI_APPLICATION	tutorial/settings.py	/^WSGI_APPLICATION = 'tutorial.wsgi.application'$/;"	kind:variable	line:102
+__init__	apiAdmin/serializers.py	/^    def __init__(self, client_id="", client_secret="",$/;"	kind:member	line:33
+__init__	snippets/views0.py	/^    def __init__(self, data, **kwargs):$/;"	kind:member	line:20
+__init__.py	apiAdmin/__init__.py	1;"	kind:file	line:1
+__init__.py	apiAdmin/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	experiments/__init__.py	1;"	kind:file	line:1
+__init__.py	experiments/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	security/__init__.py	1;"	kind:file	line:1
+__init__.py	snippets/__init__.py	1;"	kind:file	line:1
+__init__.py	snippets/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	tutorial/__init__.py	1;"	kind:file	line:1
+add	experiments/views_calculator.py	/^def add(request, numbers=None):$/;"	kind:function	line:16
+admin	apiAdmin/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	experiments/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	snippets/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	tutorial/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
+admin.py	apiAdmin/admin.py	1;"	kind:file	line:1
+admin.py	experiments/admin.py	1;"	kind:file	line:1
+admin.py	snippets/admin.py	1;"	kind:file	line:1
+api_root	apiAdmin/views.py	/^def api_root(request, format=None):$/;"	kind:function	line:22
+api_view	apiAdmin/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
+api_view	experiments/views_calculator.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:9
+api_view	experiments/views_file.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:11
+api_view	snippets/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:8
+api_view	snippets/views1.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
+application	tutorial/wsgi.py	/^application = DjangoWhiteNoise(application)$/;"	kind:variable	line:18
+application	tutorial/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:17
+apps.py	apiAdmin/apps.py	1;"	kind:file	line:1
+apps.py	experiments/apps.py	1;"	kind:file	line:1
+apps.py	snippets/apps.py	1;"	kind:file	line:1
+authentication_classes	apiAdmin/views_oauth2.py	/^from rest_framework.decorators import authentication_classes, permission_classes$/;"	kind:namespace	line:13
+client_id	apiAdmin/serializers.py	/^    client_id = serializers.CharField(max_length=256)$/;"	kind:variable	line:44
+client_secret	apiAdmin/serializers.py	/^    client_secret = serializers.CharField(max_length=256, required=False)$/;"	kind:variable	line:45
+code	snippets/models.py	/^    code = models.TextField()$/;"	kind:variable	line:19
+create	apiAdmin/serializers.py	/^    def create(self, validated_data):$/;"	kind:member	line:60
+created	snippets/models.py	/^    created = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:17
+csrf_exempt	snippets/views0.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:6
+db	snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+db_from_env	tutorial/settings.py	/^db_from_env = dj_database_url.config(conn_max_age=500)$/;"	kind:variable	line:167
+default	snippets/models.py	/^                              default=None)$/;"	kind:variable	line:27
+delete	snippets/views2.py	/^    def delete(self, request, pk, format=None):$/;"	kind:member	line:67
+delete	snippets/views3.py	/^    def delete(self, request, *args, **kwargs):$/;"	kind:member	line:50
+deletion	snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+dependencies	snippets/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	snippets/migrations/0002_auto_20170208_2231.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	snippets/migrations/0003_auto_20170208_2246.py	/^    dependencies = [$/;"	kind:variable	line:10
+dependencies	snippets/migrations/0004_auto_20170209_1715.py	/^    dependencies = [$/;"	kind:variable	line:12
+dirname	manage.py	/^from os.path import join, dirname$/;"	kind:namespace	line:5
+dj_database_url	tutorial/settings.py	/^import dj_database_url$/;"	kind:namespace	line:14
+django	manage.py	/^            import django$/;"	kind:namespace	line:17
+django	snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+dotenv_path	manage.py	/^    dotenv_path = join(dirname(__file__), '.env')$/;"	kind:variable	line:28
+execute_from_command_line	manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:11
+extra_kwargs	apiAdmin/serializers.py	/^        extra_kwargs = {'password': {'write_only': True}}$/;"	kind:variable	line:28
+field	snippets/migrations/0004_auto_20170209_1715.py	/^            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='snippets', to=settings.AUTH_USER_MODEL),$/;"	kind:variable	line:26
+field	snippets/migrations/0004_auto_20170209_1715.py	/^            field=models.TextField(blank=True, default=None, null=True),$/;"	kind:variable	line:21
+fields	apiAdmin/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:12
+fields	apiAdmin/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:19
+fields	apiAdmin/serializers.py	/^        fields = ('username', 'email', 'password')$/;"	kind:variable	line:26
+fields	snippets/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
+fields	snippets/serializers.py	/^        fields = ('url', 'id', 'highlight', 'owner',$/;"	kind:variable	line:16
+fields	snippets/serializers.py	/^        fields = ('url', 'id', 'username', 'snippets')$/;"	kind:variable	line:56
+format_suffix_patterns	experiments/urls.py	/^from rest_framework.urlpatterns import format_suffix_patterns$/;"	kind:namespace	line:2
+format_suffix_patterns	snippets/urls.py	/^from rest_framework.urlpatterns import format_suffix_patterns$/;"	kind:namespace	line:3
+generics	apiAdmin/views.py	/^from rest_framework import permissions, generics$/;"	kind:namespace	line:6
+generics	apiAdmin/views_oauth2.py	/^from rest_framework import generics$/;"	kind:namespace	line:15
+generics	snippets/views.py	/^from rest_framework import generics$/;"	kind:namespace	line:6
+generics	snippets/views3.py	/^from rest_framework import generics$/;"	kind:namespace	line:7
+generics	snippets/views4.py	/^from rest_framework import generics$/;"	kind:namespace	line:6
+get	snippets/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:61
+get	snippets/views2.py	/^    def get(self, request, format=None):$/;"	kind:member	line:24
+get	snippets/views2.py	/^    def get(self, request, pk, format=None):$/;"	kind:member	line:53
+get	snippets/views3.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:25
+get	snippets/views3.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:44
+get	tutorial/swagger.py	/^    def get(self, request):$/;"	kind:member	line:18
+get_all_lexers	snippets/models.py	/^from pygments.lexers import get_all_lexers$/;"	kind:namespace	line:5
+get_all_styles	snippets/models.py	/^from pygments.styles import get_all_styles$/;"	kind:namespace	line:6
+get_file_http_response	experiments/views_file.py	/^def get_file_http_response(file, guess_type, attachment):$/;"	kind:function	line:17
+get_lexer_by_name	snippets/models.py	/^from pygments.lexers import get_lexer_by_name$/;"	kind:namespace	line:7
+get_object	snippets/views2.py	/^    def get_object(self, pk):$/;"	kind:member	line:47
+get_schema_view	tutorial/urls.py	/^from rest_framework.schemas import get_schema_view$/;"	kind:namespace	line:22
+get_swagger_view	tutorial/urls.py	/^from rest_framework_swagger.views import get_swagger_view$/;"	kind:namespace	line:21
+get_wsgi_application	tutorial/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+grant_type	apiAdmin/serializers.py	/^    grant_type = serializers.CharField(max_length=256, default='password')$/;"	kind:variable	line:43
+has_object_permission	security/permissions.py	/^    def has_object_permission(self, request, view, obj):$/;"	kind:member	line:9
+has_permission	security/permissions.py	/^    def has_permission(self, request, view):$/;"	kind:member	line:24
+highlight	snippets/models.py	/^from pygments import highlight$/;"	kind:namespace	line:9
+highlight	snippets/serializers.py	/^    highlight = serializers.HyperlinkedIdentityField($/;"	kind:variable	line:11
+highlighted	snippets/models.py	/^    highlighted = models.TextField(null=True, blank=True, default=None)$/;"	kind:variable	line:28
+include	apiAdmin/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+include	experiments/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+include	snippets/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+include	tutorial/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+initial	snippets/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+join	manage.py	/^from os.path import join, dirname$/;"	kind:namespace	line:5
+jpeg	experiments/views_file.py	/^def jpeg(request):$/;"	kind:function	line:46
+json	apiAdmin/views_oauth2.py	/^import json$/;"	kind:namespace	line:5
+language	snippets/models.py	/^    language = models.CharField($/;"	kind:variable	line:21
+linenos	snippets/models.py	/^    linenos = models.BooleanField(default=False)$/;"	kind:variable	line:20
+load_dotenv	manage.py	/^from dotenv import load_dotenv$/;"	kind:namespace	line:6
+manage.py	manage.py	1;"	kind:file	line:1
+migrations	snippets/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	snippets/migrations/0002_auto_20170208_2231.py	/^from django.db import migrations$/;"	kind:namespace	line:5
+migrations	snippets/migrations/0003_auto_20170208_2246.py	/^from django.db import migrations$/;"	kind:namespace	line:5
+migrations	snippets/migrations/0004_auto_20170209_1715.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+mimetypes	experiments/views_file.py	/^import mimetypes$/;"	kind:namespace	line:4
+mixins	snippets/views3.py	/^from rest_framework import mixins$/;"	kind:namespace	line:6
+model	apiAdmin/serializers.py	/^        model = Group$/;"	kind:variable	line:18
+model	apiAdmin/serializers.py	/^        model = User$/;"	kind:variable	line:11
+model	apiAdmin/serializers.py	/^        model = User$/;"	kind:variable	line:25
+model	snippets/serializers.py	/^        model = Snippet$/;"	kind:variable	line:15
+model	snippets/serializers.py	/^        model = User$/;"	kind:variable	line:55
+model_name	snippets/migrations/0004_auto_20170209_1715.py	/^            model_name='snippet',$/;"	kind:variable	line:19
+model_name	snippets/migrations/0004_auto_20170209_1715.py	/^            model_name='snippet',$/;"	kind:variable	line:24
+models	apiAdmin/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	experiments/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	snippets/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+models	snippets/migrations/0004_auto_20170209_1715.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+models	snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+models	snippets/models.py	/^from django.db import models$/;"	kind:namespace	line:4
+models.py	apiAdmin/models.py	1;"	kind:file	line:1
+models.py	experiments/models.py	1;"	kind:file	line:1
+models.py	snippets/models.py	1;"	kind:file	line:1
+name	apiAdmin/apps.py	/^    name = 'apiAdmin'$/;"	kind:variable	line:5
+name	experiments/apps.py	/^    name = 'experiments'$/;"	kind:variable	line:5
+name	snippets/apps.py	/^    name = 'snippets'$/;"	kind:variable	line:5
+name	snippets/migrations/0001_initial.py	/^            name='Snippet',$/;"	kind:variable	line:17
+name	snippets/migrations/0002_auto_20170208_2231.py	/^            name='snippet',$/;"	kind:variable	line:16
+name	snippets/migrations/0003_auto_20170208_2246.py	/^            name='snippet',$/;"	kind:variable	line:16
+name	snippets/migrations/0004_auto_20170209_1715.py	/^            name='highlighted',$/;"	kind:variable	line:20
+name	snippets/migrations/0004_auto_20170209_1715.py	/^            name='owner',$/;"	kind:variable	line:25
+name	snippets/urls.py	/^        name='snippet-detail'),$/;"	kind:variable	line:18
+name	snippets/urls.py	/^        name='snippet-highlight'),$/;"	kind:variable	line:21
+name	snippets/urls.py	/^        name='snippet-list'),$/;"	kind:variable	line:15
+name	snippets/urls.py	/^        name='snippets-user-detail')$/;"	kind:variable	line:27
+name	snippets/urls.py	/^        name='snippets-user-list'),$/;"	kind:variable	line:24
+name	tutorial/urls.py	/^            name="authorized-token-delete"),$/;"	kind:variable	line:56
+namespace	tutorial/urls.py	/^                               namespace='rest_framework')),$/;"	kind:variable	line:71
+oauth2_endpoint_views	tutorial/urls.py	/^oauth2_endpoint_views = [$/;"	kind:variable	line:35
+oauth2_provider	tutorial/urls.py	/^import oauth2_provider.views as oauth2_views$/;"	kind:namespace	line:24
+oauth2_settings	apiAdmin/views_oauth2.py	/^from oauth2_provider.settings import oauth2_settings$/;"	kind:namespace	line:9
+oauth2_views	tutorial/urls.py	/^import oauth2_provider.views as oauth2_views$/;"	kind:namespace	line:24
+oauthlib_backend_class	apiAdmin/views_oauth2.py	/^    oauthlib_backend_class = OAuthLibCore$/;"	kind:variable	line:26
+operations	snippets/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
+operations	snippets/migrations/0002_auto_20170208_2231.py	/^    operations = [$/;"	kind:variable	line:14
+operations	snippets/migrations/0003_auto_20170208_2246.py	/^    operations = [$/;"	kind:variable	line:14
+operations	snippets/migrations/0004_auto_20170209_1715.py	/^    operations = [$/;"	kind:variable	line:17
+options	snippets/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:27
+options	snippets/migrations/0002_auto_20170208_2231.py	/^            options={},$/;"	kind:variable	line:17
+options	snippets/migrations/0003_auto_20170208_2246.py	/^            options={'ordering': ('created', 'title')},$/;"	kind:variable	line:17
+ordering	snippets/models.py	/^        ordering = ('created', 'title')$/;"	kind:variable	line:44
+os	experiments/views_file.py	/^import os$/;"	kind:namespace	line:3
+os	manage.py	/^import os$/;"	kind:namespace	line:2
+os	tutorial/settings.py	/^import os$/;"	kind:namespace	line:13
+os	tutorial/wsgi.py	/^import os$/;"	kind:namespace	line:10
+owner	snippets/models.py	/^    owner = models.ForeignKey('auth.User', related_name='snippets',$/;"	kind:variable	line:25
+owner	snippets/serializers.py	/^    owner = serializers.ReadOnlyField(source='owner.username')$/;"	kind:variable	line:10
+password	apiAdmin/serializers.py	/^    password = serializers.CharField(max_length=256)$/;"	kind:variable	line:47
+pdf	experiments/views_file.py	/^def pdf(request):$/;"	kind:function	line:34
+perform_create	snippets/views.py	/^    def perform_create(self, serializer):$/;"	kind:member	line:29
+permission_classes	apiAdmin/views.py	/^    permission_classes = (IsAuthenticatedOrCreate,)$/;"	kind:variable	line:37
+permission_classes	apiAdmin/views.py	/^    permission_classes = [$/;"	kind:variable	line:44
+permission_classes	apiAdmin/views.py	/^    permission_classes = [permissions.IsAuthenticatedOrReadOnly, TokenHasScope]$/;"	kind:variable	line:54
+permission_classes	apiAdmin/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
+permission_classes	apiAdmin/views_oauth2.py	/^    permission_classes = (permissions.AllowAny,)$/;"	kind:variable	line:27
+permission_classes	apiAdmin/views_oauth2.py	/^from rest_framework.decorators import authentication_classes, permission_classes$/;"	kind:namespace	line:13
+permission_classes	experiments/views_calculator.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:9
+permission_classes	experiments/views_file.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:11
+permission_classes	snippets/views.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,$/;"	kind:variable	line:37
+permission_classes	snippets/views.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:27
+permission_classes	snippets/views.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:45
+permission_classes	snippets/views.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:52
+permission_classes	snippets/views.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:59
+permission_classes	snippets/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:8
+permission_classes	snippets/views1.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
+permission_classes	snippets/views2.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,$/;"	kind:variable	line:44
+permission_classes	snippets/views2.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:22
+permission_classes	snippets/views3.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,$/;"	kind:variable	line:41
+permission_classes	snippets/views3.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:23
+permission_classes	snippets/views4.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,$/;"	kind:variable	line:29
+permission_classes	snippets/views4.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:20
+permission_classes	tutorial/swagger.py	/^    permission_classes = [AllowAny]$/;"	kind:variable	line:12
+permissions	apiAdmin/views.py	/^from rest_framework import permissions, generics$/;"	kind:namespace	line:6
+permissions	apiAdmin/views_oauth2.py	/^from rest_framework import permissions$/;"	kind:namespace	line:11
+permissions	experiments/views_calculator.py	/^from rest_framework import permissions$/;"	kind:namespace	line:7
+permissions	experiments/views_file.py	/^from rest_framework import permissions$/;"	kind:namespace	line:12
+permissions	security/permissions.py	/^from rest_framework import permissions$/;"	kind:namespace	line:1
+permissions	snippets/views.py	/^from rest_framework import permissions$/;"	kind:namespace	line:7
+permissions	snippets/views0.py	/^from rest_framework import permissions$/;"	kind:namespace	line:8
+permissions	snippets/views1.py	/^from rest_framework import permissions$/;"	kind:namespace	line:9
+permissions	snippets/views2.py	/^from rest_framework import permissions$/;"	kind:namespace	line:10
+permissions	snippets/views3.py	/^from rest_framework import permissions$/;"	kind:namespace	line:8
+permissions	snippets/views4.py	/^from rest_framework import permissions$/;"	kind:namespace	line:7
+permissions.py	security/permissions.py	1;"	kind:file	line:1
+post	apiAdmin/views_oauth2.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:30
+post	snippets/views2.py	/^    def post(self, request, format=None):$/;"	kind:member	line:30
+post	snippets/views3.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:28
+put	snippets/views2.py	/^    def put(self, request, pk, format=None):$/;"	kind:member	line:58
+put	snippets/views3.py	/^    def put(self, request, *args, **kwargs):$/;"	kind:member	line:47
+queryset	apiAdmin/views.py	/^    queryset = Group.objects.all()$/;"	kind:variable	line:56
+queryset	apiAdmin/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:35
+queryset	apiAdmin/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:46
+queryset	snippets/views.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:25
+queryset	snippets/views.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:35
+queryset	snippets/views.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:57
+queryset	snippets/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:43
+queryset	snippets/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:50
+queryset	snippets/views3.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:21
+queryset	snippets/views3.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:39
+queryset	snippets/views4.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:18
+queryset	snippets/views4.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:27
+read_only	snippets/serializers.py	/^                                                   read_only=True)$/;"	kind:variable	line:52
+render	experiments/views_calculator.py	/^from django.shortcuts import render$/;"	kind:namespace	line:3
+render	experiments/views_file.py	/^from django.shortcuts import render$/;"	kind:namespace	line:5
+renderer_classes	snippets/views.py	/^    renderer_classes = (renderers.StaticHTMLRenderer,)$/;"	kind:variable	line:58
+renderer_classes	tutorial/swagger.py	/^    renderer_classes = [$/;"	kind:variable	line:13
+renderers	snippets/views.py	/^from rest_framework import renderers$/;"	kind:namespace	line:11
+renderers	tutorial/swagger.py	/^from rest_framework_swagger import renderers$/;"	kind:namespace	line:8
+required_scopes	apiAdmin/views.py	/^    required_scopes = ['groups']$/;"	kind:variable	line:55
+reverse	apiAdmin/views.py	/^from rest_framework.reverse import reverse$/;"	kind:namespace	line:9
+reverse	snippets/views.py	/^from rest_framework.reverse import reverse$/;"	kind:namespace	line:10
+router	apiAdmin/urls.py	/^router = SimpleRouter()$/;"	kind:variable	line:8
+routers	tutorial/urls.py	/^from rest_framework import routers$/;"	kind:namespace	line:20
+save	snippets/models.py	/^    def save(self, *args, **kwargs):$/;"	kind:member	line:30
+schema_view	tutorial/urls.py	/^schema_view = get_schema_view(title=settings.API_NAME)$/;"	kind:variable	line:32
+serializer_class	apiAdmin/views.py	/^    serializer_class = GroupSerializer$/;"	kind:variable	line:57
+serializer_class	apiAdmin/views.py	/^    serializer_class = SignUpSerializer$/;"	kind:variable	line:36
+serializer_class	apiAdmin/views.py	/^    serializer_class = UserSerializer$/;"	kind:variable	line:47
+serializer_class	apiAdmin/views_oauth2.py	/^    serializer_class = OAuth2PasswordAccessTokenRequestFieldsSerializer$/;"	kind:variable	line:28
+serializer_class	snippets/views.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:26
+serializer_class	snippets/views.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:36
+serializer_class	snippets/views.py	/^    serializer_class = UserSerializer$/;"	kind:variable	line:44
+serializer_class	snippets/views.py	/^    serializer_class = UserSerializer$/;"	kind:variable	line:51
+serializer_class	snippets/views3.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:22
+serializer_class	snippets/views3.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:40
+serializer_class	snippets/views4.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:19
+serializer_class	snippets/views4.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:28
+serializers	apiAdmin/serializers.py	/^from rest_framework import serializers$/;"	kind:namespace	line:4
+serializers	apiAdmin/views.py	/^from rest_framework import serializers, viewsets$/;"	kind:namespace	line:11
+serializers	snippets/serializers.py	/^from rest_framework import serializers$/;"	kind:namespace	line:4
+serializers.py	apiAdmin/serializers.py	1;"	kind:file	line:1
+serializers.py	snippets/serializers.py	1;"	kind:file	line:1
+server_class	apiAdmin/views_oauth2.py	/^    server_class = oauth2_settings.OAUTH2_SERVER_CLASS$/;"	kind:variable	line:24
+settings	experiments/views_calculator.py	/^from django.conf import settings$/;"	kind:namespace	line:5
+settings	experiments/views_file.py	/^from django.conf import settings$/;"	kind:namespace	line:7
+settings	snippets/migrations/0004_auto_20170209_1715.py	/^from django.conf import settings$/;"	kind:namespace	line:5
+settings	snippets/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:2
+settings	tutorial/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:18
+settings.py	tutorial/settings.py	1;"	kind:file	line:1
+snippet_detail	snippets/views0.py	/^def snippet_detail(request, pk):$/;"	kind:function	line:47
+snippet_detail	snippets/views1.py	/^def snippet_detail(request, pk, format=None):$/;"	kind:function	line:51
+snippet_list	snippets/views0.py	/^def snippet_list(request):$/;"	kind:function	line:27
+snippet_list	snippets/views1.py	/^def snippet_list(request, format=None):$/;"	kind:function	line:32
+snippets	snippets/serializers.py	/^    snippets = serializers.HyperlinkedRelatedField(many=True,$/;"	kind:variable	line:50
+status	apiAdmin/views_oauth2.py	/^from rest_framework import status$/;"	kind:namespace	line:12
+status	experiments/views_calculator.py	/^from rest_framework import status$/;"	kind:namespace	line:8
+status	experiments/views_file.py	/^from rest_framework import status$/;"	kind:namespace	line:10
+status	snippets/views1.py	/^from rest_framework import status$/;"	kind:namespace	line:6
+status	snippets/views2.py	/^from rest_framework import status$/;"	kind:namespace	line:7
+style	snippets/models.py	/^    style = models.CharField(choices=STYLE_CHOICES,$/;"	kind:variable	line:23
+swagger.py	tutorial/swagger.py	1;"	kind:file	line:1
+swagger_view	tutorial/urls.py	/^swagger_view = get_swagger_view(title=settings.API_NAME)$/;"	kind:variable	line:28
+sys	manage.py	/^import sys$/;"	kind:namespace	line:3
+tests.py	apiAdmin/tests.py	1;"	kind:file	line:1
+tests.py	experiments/tests.py	1;"	kind:file	line:1
+tests.py	snippets/tests.py	1;"	kind:file	line:1
+title	snippets/models.py	/^    title = models.CharField(max_length=100, blank=True, default='')$/;"	kind:variable	line:18
+tokenView	apiAdmin/views_oauth2.py	/^class tokenView(CsrfExemptMixin, OAuthLibMixin, generics.GenericAPIView):$/;"	kind:class	line:20
+unicode_literals	snippets/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	snippets/migrations/0002_auto_20170208_2231.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	snippets/migrations/0003_auto_20170208_2246.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	snippets/migrations/0004_auto_20170209_1715.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+update	apiAdmin/serializers.py	/^    def update(self, instance, validated_data):$/;"	kind:member	line:49
+url	apiAdmin/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+url	experiments/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+url	snippets/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+url	tutorial/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+urlpatterns	apiAdmin/urls.py	/^urlpatterns = [$/;"	kind:variable	line:13
+urlpatterns	experiments/urls.py	/^urlpatterns = [$/;"	kind:variable	line:9
+urlpatterns	snippets/urls.py	/^urlpatterns = [$/;"	kind:variable	line:12
+urlpatterns	snippets/urls.py	/^urlpatterns = format_suffix_patterns(urlpatterns)$/;"	kind:variable	line:50
+urlpatterns	tutorial/urls.py	/^urlpatterns = [$/;"	kind:variable	line:62
+urls.py	apiAdmin/urls.py	1;"	kind:file	line:1
+urls.py	experiments/urls.py	1;"	kind:file	line:1
+urls.py	snippets/urls.py	1;"	kind:file	line:1
+urls.py	tutorial/urls.py	1;"	kind:file	line:1
+username	apiAdmin/serializers.py	/^    username = serializers.CharField(max_length=256)$/;"	kind:variable	line:46
+validator_class	apiAdmin/views_oauth2.py	/^    validator_class = oauth2_settings.OAUTH2_VALIDATOR_CLASS$/;"	kind:variable	line:25
+view_name	snippets/serializers.py	/^                                                   view_name='snippet-detail',$/;"	kind:variable	line:51
+views	apiAdmin/urls.py	/^from apiAdmin import views, views_oauth2$/;"	kind:namespace	line:5
+views	snippets/urls.py	/^from snippets import views$/;"	kind:namespace	line:9
+views.py	apiAdmin/views.py	1;"	kind:file	line:1
+views.py	snippets/views.py	1;"	kind:file	line:1
+views0	snippets/urls.py	/^from snippets import views0$/;"	kind:namespace	line:4
+views0.py	snippets/views0.py	1;"	kind:file	line:1
+views1	snippets/urls.py	/^from snippets import views1$/;"	kind:namespace	line:5
+views1.py	snippets/views1.py	1;"	kind:file	line:1
+views2	snippets/urls.py	/^from snippets import views2$/;"	kind:namespace	line:6
+views2.py	snippets/views2.py	1;"	kind:file	line:1
+views3	snippets/urls.py	/^from snippets import views3$/;"	kind:namespace	line:7
+views3.py	snippets/views3.py	1;"	kind:file	line:1
+views4	snippets/urls.py	/^from snippets import views4$/;"	kind:namespace	line:8
+views4.py	snippets/views4.py	1;"	kind:file	line:1
+views_calculator	experiments/urls.py	/^from experiments import views_calculator$/;"	kind:namespace	line:5
+views_calculator.py	experiments/views_calculator.py	1;"	kind:file	line:1
+views_file	experiments/urls.py	/^from experiments import views_file$/;"	kind:namespace	line:6
+views_file.py	experiments/views_file.py	1;"	kind:file	line:1
+views_oauth2	apiAdmin/urls.py	/^from apiAdmin import views, views_oauth2$/;"	kind:namespace	line:5
+views_oauth2.py	apiAdmin/views_oauth2.py	1;"	kind:file	line:1
+viewsets	apiAdmin/views.py	/^from rest_framework import serializers, viewsets$/;"	kind:namespace	line:11
+wsgi.py	tutorial/wsgi.py	1;"	kind:file	line:1
+zip	experiments/views_file.py	/^def zip(request):$/;"	kind:function	line:40

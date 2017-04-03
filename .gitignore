@@ -1,0 +1,7 @@
+venv
+*.pyc
+staticfiles
+*.sqlite3
+.env
+temp
+social.accounts
