@@ -1,4 +1,4 @@
-appdirs==1.4.0
+appdirs==1.4.3
 astroid==1.4.9
 autopep8==1.2.4
 awsebcli==3.10.1
@@ -54,7 +54,7 @@ pylint-common==0.2.2
 pylint-django==0.7.2
 pylint-flask==0.5
 pylint-plugin-utils==0.2.4
-pyparsing==2.1.10
+pyparsing==2.2.0
 python-dateutil==2.6.0
 python-dotenv==0.6.3
 python-http-client==2.2.1
@@ -68,7 +68,7 @@ sendgrid==3.6.3
 sendgrid-django==4.0.4
 setoptconf==0.2.0
 simplejson==3.10.0
-six==1.9.0
+six==1.10.0
 social-auth-app-django==1.1.0
 social-auth-core==1.2.0
 tabulate==0.7.5
