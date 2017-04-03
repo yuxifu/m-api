@@ -235,7 +235,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'PAGE_SIZE': 10,
-    'URL_FORMAT_OVERRIDE': 'format'  # default 'format'; swagger is not working with None
+    # default 'format'; swagger is not working with None
+    'URL_FORMAT_OVERRIDE': 'format'
 }
 
 API_NAME = 'My Web API'
@@ -259,7 +260,7 @@ SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']
 SITE_ID = 1
 
 REST_USE_JWT = False
-REST_SESSION_LOGIN = False #
+REST_SESSION_LOGIN = False
 
 # ”username” | “email” | “username_email”
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
