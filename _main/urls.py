@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+import os
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
@@ -37,6 +38,7 @@ schema_view = get_schema_view(title=settings.API_NAME)
 # Routers provide an easy way of automatically determining the URL conf
 # router = routers.DefaultRouter()
 
+# admin/system urls
 urlpatterns = [
     #
     # url(r'^', include(router.urls)),
@@ -71,15 +73,26 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
     url(r'^', include('django.contrib.auth.urls')),
 
-    # App 'snippets'
-    url(r'^', include('snippets.urls')),
-
-    # App 'experiments'
-    url(r'^', include('experiments.urls')),
-
     # App 'apiAdmin'
     url(r'^', include('apiAdmin.urls')),
+]
 
+# experimental urls
+if os.environ.get('EXPERIMENTAL_HIDE', 'False') == 'False':
+    urlpatterns += [
+        # App 'snippets'
+        url(r'^', include('snippets.urls')),
+        # App 'experiments'
+        url(r'^', include('experiments.urls')),
+    ]
+
+# features
+urlpatterns += [
+    # API interfaces
+]
+
+# redirect root to swagger UI
+urlpatterns += [
     # redirect root to swagger UI
     url(r'^$', RedirectView.as_view(url='/swagger/')),
 ]

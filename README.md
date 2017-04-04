@@ -19,7 +19,7 @@ To use this project, follow these steps:
 1. Create your working environment.  See [Set up Python](http://sourabhbajaj.com/mac-setup/Python/README.html).
 2. Install dependences using `pip`.  
 3. Download this project.
-4. Run `python manage.py runserver` or `gunicorn tutorial.wsgi` to test.
+4. Run `python manage.py runserver` or `gunicorn _main.wsgi` to test.
 
 - API root: [http://localhost:8000/](http://localhost:8000/) 
 - Swagger: [http://localhost:8000/swagger/](http://localhost:8000/swagger/)

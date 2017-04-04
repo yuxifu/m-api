@@ -6,7 +6,7 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tutorial.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "_main.settings")
     try:
         from django.core.management import execute_from_command_line
     except ImportError:
