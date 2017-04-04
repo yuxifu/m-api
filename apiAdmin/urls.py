@@ -17,6 +17,10 @@ urlpatterns = [
     url(r'^administration/', include(router.urls)),
 
     # sign up end point
-    url(r'^administration/user-register/$', views.UserRegister.as_view(), name="register"),
+    url(r'^administration/user-register/$',
+        views.UserRegister.as_view(), name="register"),
+    url(r'^administration/helloworld/$',
+        views.api_helloworld, name="helloworld"),
+    url(r'^administration/protected/$',
+        views.api_helloworld_protected, name="protected"),
 ]
-

@@ -29,6 +29,20 @@ def api_root(request, format=None):
     })
 
 
+@api_view(['GET'])
+@permission_classes((permissions.AllowAny,))
+def api_helloworld(request, format=None):
+    """Hello World"""
+    return Response('Hello World!')
+
+
+@api_view(['GET'])
+@permission_classes((permissions.IsAuthenticated,))
+def api_helloworld_protected(request, format=None):
+    """Hello World. Must be Authenticated"""
+    return Response('Hello you are authenticated. Stay Cool.')
+
+
 class UserRegister(generics.CreateAPIView):
     """
     Register a new user
