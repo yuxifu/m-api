@@ -53,7 +53,8 @@ urlpatterns = [
     url(r'^swagger/$', swagger_view, name='swagger-root'),
 
     # http://drfdocs.com/
-    url(r'^docs/', include('rest_framework_docs.urls')),
+    # not working correctly
+    # url(r'^docs/', include('rest_framework_docs.urls')),
 
     # API schemas
     # http://www.django-rest-framework.org/tutorial/7-schemas-and-client-libraries/
