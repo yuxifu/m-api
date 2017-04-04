@@ -28,7 +28,7 @@ urlpatterns = [
 ]
 
 # different ways to create API
-if settings.DEBUG:
+if not settings.HIDE_ALPHA_EXPERIMENTAL:
     urlpatterns += [
         url(r'^exp_snippets0/$', views0.snippet_list),
         url(r'^exp_snippets0/(?P<pk>[0-9]+)/$', views0.snippet_detail),

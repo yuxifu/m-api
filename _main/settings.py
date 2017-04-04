@@ -30,6 +30,10 @@ except KeyError:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
+HIDE_EXPERIMENTAL = os.environ.get('HIDE_EXPERIMENTAL', 'True') == 'True'
+HIDE_ALPHA_EXPERIMENTAL = os.environ.get(
+    'HIDE_ALPHA_EXPERIMENTAL', 'True') == 'True'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -278,6 +282,8 @@ if DEBUG:
     print('PROJECT_ROOT : ' + PROJECT_ROOT)
     print('SECRET_KEY: ' + SECRET_KEY)
     print('DEBUG: ' + str(DEBUG))
+    print('HIDE_EXPERIMENTAL: ' + str(HIDE_EXPERIMENTAL))
+    print('HIDE_ALPHA_EXPERIMENTAL: ' + str(HIDE_ALPHA_EXPERIMENTAL))
     print('Database Engine: ' + DATABASES['default']['ENGINE'])
     print('EMAIL_HOST: ' + EMAIL_HOST)
     print('EMAIL_PORT: ' + EMAIL_PORT)
