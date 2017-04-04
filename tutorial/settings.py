@@ -242,20 +242,18 @@ REST_FRAMEWORK = {
 API_NAME = 'My Web API'
 
 # email
-"""
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 try:
-    EMAIL_HOST = 'smtp.sendgrid.net'
+    EMAIL_HOST = os.environ['EMAIL_HOST']
+    EMAIL_PORT = os.environ['EMAIL_PORT']
+    EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', False) == 'True'
     EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
     EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']
-    EMAIL_PORT = 587
-    EMAIL_USE_TLS = True
-    DEFAULT_FROM_EMAIL = os.environ['DEFAULT_FROM_EMAIL']
+    DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 except KeyError:
     raise Exception('Email service information missing.')
-"""
-EMAIL_BACKEND = "sgbackend.SendGridBackend"
-SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']
+# EMAIL_BACKEND = "sgbackend.SendGridBackend"
+# SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']
 
 SITE_ID = 1
 
@@ -275,8 +273,14 @@ SOCIALACCOUNT_EMAIL_REQUIRED = True
 SOCIALACCOUNT_QUERY_EMAIL = True
 
 # output settings to console
-print('BASE_DIR: ' + BASE_DIR)
-print('PROJECT_ROOT : ' + PROJECT_ROOT)
-print('SECRET_KEY: ' + SECRET_KEY)
-print('DEBUG: ' + str(DEBUG))
-print('Database Engine: ' + DATABASES['default']['ENGINE'])
+if DEBUG:
+    print('BASE_DIR: ' + BASE_DIR)
+    print('PROJECT_ROOT : ' + PROJECT_ROOT)
+    print('SECRET_KEY: ' + SECRET_KEY)
+    print('DEBUG: ' + str(DEBUG))
+    print('Database Engine: ' + DATABASES['default']['ENGINE'])
+    print('EMAIL_HOST: ' + EMAIL_HOST)
+    print('EMAIL_PORT: ' + EMAIL_PORT)
+    print('EMAIL_USE_TLS: ' + str(EMAIL_USE_TLS))
+    print('EMAIL_HOST_USER: ' + EMAIL_HOST_USER)
+    print('EMAIL_HOST_PASSWORD: ' + EMAIL_HOST_PASSWORD)
