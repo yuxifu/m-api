@@ -265,11 +265,11 @@ REST_USE_JWT = False
 REST_SESSION_LOGIN = False
 
 # ”username” | “email” | “username_email”
-ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_VERIFICATION = 'optional'  # 'mandatory'
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_REQUIRED = True   # must be True if 'email' authentication is used
-ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_USERNAME_REQUIRED = True
 LOGIN_REDIRECT_URL = '/'
 
 SOCIALACCOUNT_EMAIL_VERIFICATION = "none"

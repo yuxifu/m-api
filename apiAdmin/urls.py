@@ -17,8 +17,11 @@ urlpatterns = [
     url(r'^administration/', include(router.urls)),
 
     # sign up end point
-    url(r'^administration/user-register/$',
-        views.UserRegister.as_view(), name="register"),
+    # 4/6/17: use POST /rest-auth/registration/ instead
+    # url(r'^administration/user-register/$',
+    #    views.UserRegister.as_view(), name="register"),
+
+    # test endpoints
     url(r'^administration/helloworld/$',
         views.api_helloworld, name="helloworld"),
     url(r'^administration/protected/$',
