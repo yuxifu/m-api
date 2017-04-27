@@ -2,6 +2,8 @@
 
 A starter project template to build a robust RESTful Web API using [Django REST framework](http://www.django-rest-framework.org/) .
 
+Here is a [Live Demo](https://yuxi-m-api.herokuapp.com/) deployed at [heroku](http://heroku.com)
+
 ## Features
 
 - Base on [django-allauth](https://github.com/pennersr/django-allauth)
@@ -23,7 +25,6 @@ To use this project, follow these steps:
 
 - API root: [http://localhost:8000/](http://localhost:8000/) 
 - Swagger: [http://localhost:8000/swagger/](http://localhost:8000/swagger/)
-- DRF doc: [http://localhost:8000/docs/](http://localhost:8000/docs/)
 
 ## Using Python 2.7?
 
