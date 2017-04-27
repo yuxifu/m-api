@@ -14,6 +14,7 @@ Django==1.10.5
 django-allauth==0.31.0
 django-braces==1.11.0
 django-cors-middleware==1.3.1
+django-localflavor==1.4.1
 django-mako-plus==4.0.2
 django-oauth-toolkit==0.11.0
 django-rest-auth==0.9.0
