@@ -1,8 +1,8 @@
 # Django REST framework comprehensive starting project
 
-A starter project template to build a robust RESTful Web API using [Django REST framework](http://www.django-rest-framework.org/) .
+A starter project template to build a robust RESTful Web API using [Django REST framework](http://www.django-rest-framework.org/).
 
-Here is a [Live Demo](https://yuxi-m-api.herokuapp.com/) deployed at [heroku](http://heroku.com)
+Here is a [Live Demo](https://yuxi-m-api.herokuapp.com/) deployed at [heroku](http://www.heroku.com).
 
 ## Features
 
