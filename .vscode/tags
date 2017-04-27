@@ -9,44 +9,53 @@
 0002_auto_20170208_2231.py	../snippets/migrations/0002_auto_20170208_2231.py	1;"	kind:file	line:1
 0003_auto_20170208_2246.py	../snippets/migrations/0003_auto_20170208_2246.py	1;"	kind:file	line:1
 0004_auto_20170209_1715.py	../snippets/migrations/0004_auto_20170209_1715.py	1;"	kind:file	line:1
-ACCOUNT_AUTHENTICATION_METHOD	../tutorial/settings.py	/^ACCOUNT_AUTHENTICATION_METHOD = 'email'$/;"	kind:variable	line:265
-ACCOUNT_EMAIL_REQUIRED	../tutorial/settings.py	/^ACCOUNT_EMAIL_REQUIRED = True   # must be True if 'email' authentication is used$/;"	kind:variable	line:268
-ACCOUNT_EMAIL_VERIFICATION	../tutorial/settings.py	/^ACCOUNT_EMAIL_VERIFICATION = 'optional'  # 'mandatory'$/;"	kind:variable	line:266
-ACCOUNT_UNIQUE_EMAIL	../tutorial/settings.py	/^ACCOUNT_UNIQUE_EMAIL = True$/;"	kind:variable	line:267
-ACCOUNT_USERNAME_REQUIRED	../tutorial/settings.py	/^ACCOUNT_USERNAME_REQUIRED = False$/;"	kind:variable	line:269
-ALLOWED_HOSTS	../tutorial/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	kind:variable	line:184
+0005_auto_20170403_2143.py	../snippets/migrations/0005_auto_20170403_2143.py	1;"	kind:file	line:1
+ACCOUNT_AUTHENTICATION_METHOD	../_main/settings.py	/^ACCOUNT_AUTHENTICATION_METHOD = 'username_email'$/;"	kind:variable	line:268
+ACCOUNT_EMAIL_REQUIRED	../_main/settings.py	/^ACCOUNT_EMAIL_REQUIRED = True   # must be True if 'email' authentication is used$/;"	kind:variable	line:271
+ACCOUNT_EMAIL_VERIFICATION	../_main/settings.py	/^ACCOUNT_EMAIL_VERIFICATION = 'optional'  # 'mandatory'$/;"	kind:variable	line:269
+ACCOUNT_UNIQUE_EMAIL	../_main/settings.py	/^ACCOUNT_UNIQUE_EMAIL = True$/;"	kind:variable	line:270
+ACCOUNT_USERNAME_REQUIRED	../_main/settings.py	/^ACCOUNT_USERNAME_REQUIRED = True$/;"	kind:variable	line:272
+ALLOWED_HOSTS	../_main/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	kind:variable	line:188
+APIView	../_main/swagger.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:7
 APIView	../snippets/views2.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:9
-APIView	../tutorial/swagger.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:7
-API_NAME	../tutorial/settings.py	/^API_NAME = 'My Web API'$/;"	kind:variable	line:241
-AUTHENTICATION_BACKENDS	../tutorial/settings.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:71
-AUTH_PASSWORD_VALIDATORS	../tutorial/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:145
-AllowAny	../tutorial/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
+API_NAME	../_main/settings.py	/^API_NAME = os.environ.get('API_NAME', 'My Web API')$/;"	kind:variable	line:246
+AUTHENTICATION_BACKENDS	../_main/settings.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:75
+AUTH_PASSWORD_VALIDATORS	../_main/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:149
+AllowAny	../_main/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
 ApiAdminConfig	../apiAdmin/apps.py	/^class ApiAdminConfig(AppConfig):$/;"	kind:class	line:4
 AppConfig	../apiAdmin/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 AppConfig	../experiments/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 AppConfig	../snippets/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
-BASE_DIR	../tutorial/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:17
-CORS_ORIGIN_ALLOW_ALL	../tutorial/settings.py	/^CORS_ORIGIN_ALLOW_ALL = True$/;"	kind:variable	line:92
-DATABASES	../tutorial/settings.py	/^DATABASES = {$/;"	kind:variable	line:134
-DEBUG	../tutorial/settings.py	/^DEBUG = os.environ.get('DEBUG', False) == 'True'$/;"	kind:variable	line:31
+BASE_DIR	../_main/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:17
+CORS_ORIGIN_ALLOW_ALL	../_main/settings.py	/^CORS_ORIGIN_ALLOW_ALL = True$/;"	kind:variable	line:96
+DATABASES	../_main/settings.py	/^DATABASES = {$/;"	kind:variable	line:138
+DEBUG	../_main/settings.py	/^DEBUG = os.environ.get('DEBUG', 'False') == 'True'$/;"	kind:variable	line:31
+DEFAULT_FROM_EMAIL	../_main/settings.py	/^    DEFAULT_FROM_EMAIL = EMAIL_HOST_USER$/;"	kind:variable	line:256
 DefaultRouter	../apiAdmin/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:2
 DefaultRouter	../experiments/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:3
-DjangoWhiteNoise	../tutorial/wsgi.py	/^from whitenoise.django import DjangoWhiteNoise$/;"	kind:namespace	line:13
-EMAIL_BACKEND	../tutorial/settings.py	/^EMAIL_BACKEND = "sgbackend.SendGridBackend"$/;"	kind:variable	line:256
+DjangoWhiteNoise	../_main/wsgi.py	/^from whitenoise.django import DjangoWhiteNoise$/;"	kind:namespace	line:13
+EMAIL_BACKEND	../_main/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'$/;"	kind:variable	line:249
+EMAIL_HOST	../_main/settings.py	/^    EMAIL_HOST = os.environ['EMAIL_HOST']$/;"	kind:variable	line:251
+EMAIL_HOST_PASSWORD	../_main/settings.py	/^    EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']$/;"	kind:variable	line:255
+EMAIL_HOST_USER	../_main/settings.py	/^    EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']$/;"	kind:variable	line:254
+EMAIL_PORT	../_main/settings.py	/^    EMAIL_PORT = os.environ['EMAIL_PORT']$/;"	kind:variable	line:252
+EMAIL_USE_TLS	../_main/settings.py	/^    EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', False) == 'True'$/;"	kind:variable	line:253
 EverybodyCanAuthentication	../security/permissions.py	/^class EverybodyCanAuthentication(SessionAuthentication):$/;"	kind:class	line:46
 ExperimentsConfig	../experiments/apps.py	/^class ExperimentsConfig(AppConfig):$/;"	kind:class	line:4
+FacebookLogin	../_main/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 FacebookLogin	../apiAdmin/views_social.py	/^class FacebookLogin(SocialLoginView):$/;"	kind:class	line:18
-FacebookLogin	../tutorial/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 FacebookOAuth2Adapter	../apiAdmin/views_social.py	/^from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter$/;"	kind:namespace	line:5
 FileWrapper	../experiments/views_file.py	/^from wsgiref.util import FileWrapper$/;"	kind:namespace	line:8
+GoogleLogin	../_main/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 GoogleLogin	../apiAdmin/views_social.py	/^class GoogleLogin(SocialLoginView):$/;"	kind:class	line:14
-GoogleLogin	../tutorial/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 GoogleOAuth2Adapter	../apiAdmin/views_social.py	/^from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter$/;"	kind:namespace	line:7
 Group	../apiAdmin/serializers.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:5
 Group	../apiAdmin/views.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:4
 GroupSerializer	../apiAdmin/serializers.py	/^class GroupSerializer(serializers.ModelSerializer):$/;"	kind:class	line:15
 GroupSerializer	../apiAdmin/views.py	/^from apiAdmin.serializers import UserRegisterSerializer, UserSerializer, GroupSerializer$/;"	kind:namespace	line:18
-GroupViewSet	../apiAdmin/views.py	/^class GroupViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:50
+GroupViewSet	../apiAdmin/views.py	/^class GroupViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:64
+HIDE_ALPHA_EXPERIMENTAL	../_main/settings.py	/^HIDE_ALPHA_EXPERIMENTAL = os.environ.get($/;"	kind:variable	line:34
+HIDE_EXPERIMENTAL	../_main/settings.py	/^HIDE_EXPERIMENTAL = os.environ.get('HIDE_EXPERIMENTAL', 'True') == 'True'$/;"	kind:variable	line:33
 HtmlFormatter	../snippets/models.py	/^from pygments.formatters.html import HtmlFormatter$/;"	kind:namespace	line:8
 Http404	../experiments/views_calculator.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:4
 Http404	../experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
@@ -55,8 +64,8 @@ Http404	../snippets/views2.py	/^from django.http import Http404$/;"	kind:namespa
 HttpResponse	../experiments/views_calculator.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:4
 HttpResponse	../experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
 HttpResponse	../snippets/views0.py	/^from django.http import Http404, HttpResponse$/;"	kind:namespace	line:5
-INSTALLED_APPS	../tutorial/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:35
-IsAdminUser	../tutorial/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
+INSTALLED_APPS	../_main/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:39
+IsAdminUser	../_main/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
 IsAuthenticatedOrCreate	../apiAdmin/views.py	/^from security.permissions import IsAuthenticatedOrCreate, IsSuperUserOrAuthenticated$/;"	kind:namespace	line:16
 IsAuthenticatedOrCreate	../security/permissions.py	/^class IsAuthenticatedOrCreate(permissions.IsAuthenticated):$/;"	kind:class	line:35
 IsOwnerOrReadOnly	../security/permissions.py	/^class IsOwnerOrReadOnly(permissions.BasePermission):$/;"	kind:class	line:6
@@ -72,14 +81,14 @@ JSONRenderer	../snippets/views0.py	/^from rest_framework.renderers import JSONRe
 JSONResponse	../snippets/views0.py	/^class JSONResponse(HttpResponse):$/;"	kind:class	line:15
 LANGUAGE_CHOICES	../snippets/models.py	/^LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])$/;"	kind:variable	line:12
 LANGUAGE_CHOICES	../snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
-LANGUAGE_CODE	../tutorial/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:164
+LANGUAGE_CODE	../_main/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:168
 LEXERS	../snippets/models.py	/^LEXERS = [item for item in get_all_lexers() if item[1]]$/;"	kind:variable	line:11
-LOGIN_REDIRECT_URL	../tutorial/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:270
+LOGIN_REDIRECT_URL	../_main/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:273
 LoginView	../apiAdmin/views.py	/^from rest_auth.registration.views import LoginView$/;"	kind:namespace	line:12
 LoginView	../apiAdmin/views_social.py	/^from rest_auth.views import LoginView$/;"	kind:namespace	line:10
-LoginViewCustom	../apiAdmin/views.py	/^class LoginViewCustom(LoginView):$/;"	kind:class	line:60
-LoginViewCustom	../tutorial/urls.py	/^from apiAdmin.views import LoginViewCustom$/;"	kind:namespace	line:27
-MIDDLEWARE	../tutorial/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:79
+LoginViewCustom	../_main/urls.py	/^from apiAdmin.views import LoginViewCustom$/;"	kind:namespace	line:27
+LoginViewCustom	../apiAdmin/views.py	/^class LoginViewCustom(LoginView):$/;"	kind:class	line:74
+MIDDLEWARE	../_main/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:83
 Meta	../apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:10
 Meta	../apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:17
 Meta	../apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:24
@@ -93,34 +102,34 @@ Migration	../snippets/migrations/0001_initial.py	/^class Migration(migrations.Mi
 Migration	../snippets/migrations/0002_auto_20170208_2231.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../snippets/migrations/0003_auto_20170208_2246.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../snippets/migrations/0004_auto_20170209_1715.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
+Migration	../snippets/migrations/0005_auto_20170403_2143.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 OAuth2Client	../apiAdmin/views_social.py	/^from allauth.socialaccount.providers.oauth2.client import OAuth2Client$/;"	kind:namespace	line:8
-PROJECT_ROOT	../tutorial/settings.py	/^PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))$/;"	kind:variable	line:18
-REST_FRAMEWORK	../tutorial/settings.py	/^REST_FRAMEWORK = {$/;"	kind:variable	line:228
-REST_SESSION_LOGIN	../tutorial/settings.py	/^REST_SESSION_LOGIN = False #$/;"	kind:variable	line:262
-REST_USE_JWT	../tutorial/settings.py	/^REST_USE_JWT = False$/;"	kind:variable	line:261
-ROOT_URLCONF	../tutorial/settings.py	/^ROOT_URLCONF = 'tutorial.urls'$/;"	kind:variable	line:94
+PROJECT_ROOT	../_main/settings.py	/^PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))$/;"	kind:variable	line:18
+REST_FRAMEWORK	../_main/settings.py	/^REST_FRAMEWORK = {$/;"	kind:variable	line:232
+REST_SESSION_LOGIN	../_main/settings.py	/^REST_SESSION_LOGIN = False$/;"	kind:variable	line:265
+REST_USE_JWT	../_main/settings.py	/^REST_USE_JWT = False$/;"	kind:variable	line:264
+ROOT_URLCONF	../_main/settings.py	/^ROOT_URLCONF = '_main.urls'$/;"	kind:variable	line:98
+RedirectView	../_main/urls.py	/^from django.views.generic import RedirectView$/;"	kind:namespace	line:20
 RedirectView	../apiAdmin/urls.py	/^from django.views.generic import RedirectView$/;"	kind:namespace	line:3
-RedirectView	../tutorial/urls.py	/^from django.views.generic import RedirectView$/;"	kind:namespace	line:20
+Response	../_main/swagger.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:5
 Response	../apiAdmin/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
 Response	../snippets/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:9
 Response	../snippets/views1.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
 Response	../snippets/views2.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
-Response	../tutorial/swagger.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:5
-SECRET_KEY	../tutorial/settings.py	/^    SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:26
-SECURE_PROXY_SSL_HEADER	../tutorial/settings.py	/^SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')$/;"	kind:variable	line:181
-SENDGRID_API_KEY	../tutorial/settings.py	/^SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']$/;"	kind:variable	line:257
-SITE_ID	../tutorial/settings.py	/^SITE_ID = 1$/;"	kind:variable	line:259
-SOCIALACCOUNT_EMAIL_REQUIRED	../tutorial/settings.py	/^SOCIALACCOUNT_EMAIL_REQUIRED = True$/;"	kind:variable	line:273
-SOCIALACCOUNT_EMAIL_VERIFICATION	../tutorial/settings.py	/^SOCIALACCOUNT_EMAIL_VERIFICATION = "none"$/;"	kind:variable	line:272
-SOCIALACCOUNT_QUERY_EMAIL	../tutorial/settings.py	/^SOCIALACCOUNT_QUERY_EMAIL = True$/;"	kind:variable	line:274
-STATICFILES_DIRS	../tutorial/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:193
-STATICFILES_STORAGE	../tutorial/settings.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:200
-STATIC_ROOT	../tutorial/settings.py	/^STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')$/;"	kind:variable	line:189
-STATIC_URL	../tutorial/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:190
+SECRET_KEY	../_main/settings.py	/^    SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:26
+SECURE_PROXY_SSL_HEADER	../_main/settings.py	/^SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')$/;"	kind:variable	line:185
+SITE_ID	../_main/settings.py	/^SITE_ID = 1$/;"	kind:variable	line:262
+SOCIALACCOUNT_EMAIL_REQUIRED	../_main/settings.py	/^SOCIALACCOUNT_EMAIL_REQUIRED = True$/;"	kind:variable	line:276
+SOCIALACCOUNT_EMAIL_VERIFICATION	../_main/settings.py	/^SOCIALACCOUNT_EMAIL_VERIFICATION = "none"$/;"	kind:variable	line:275
+SOCIALACCOUNT_QUERY_EMAIL	../_main/settings.py	/^SOCIALACCOUNT_QUERY_EMAIL = True$/;"	kind:variable	line:277
+STATICFILES_DIRS	../_main/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:197
+STATICFILES_STORAGE	../_main/settings.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:204
+STATIC_ROOT	../_main/settings.py	/^STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')$/;"	kind:variable	line:193
+STATIC_URL	../_main/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:194
 STYLE_CHOICES	../snippets/models.py	/^STYLE_CHOICES = sorted((item, item) for item in get_all_styles())$/;"	kind:variable	line:13
 STYLE_CHOICES	../snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
-SWAGGER_SETTINGS	../tutorial/settings.py	/^SWAGGER_SETTINGS = {$/;"	kind:variable	line:203
-SchemaGenerator	../tutorial/swagger.py	/^from rest_framework.schemas import SchemaGenerator$/;"	kind:namespace	line:6
+SWAGGER_SETTINGS	../_main/settings.py	/^SWAGGER_SETTINGS = {$/;"	kind:variable	line:207
+SchemaGenerator	../_main/swagger.py	/^from rest_framework.schemas import SchemaGenerator$/;"	kind:namespace	line:6
 SendSimpleEmailMessssage	../experiments/views.py	/^                               generics.GenericAPIView):$/;"	kind:class	line:13
 SessionAuthentication	../security/permissions.py	/^from rest_framework.authentication import SessionAuthentication$/;"	kind:namespace	line:3
 SimpleEmailMessssage	../experiments/models.py	/^class SimpleEmailMessssage(models.Model):$/;"	kind:class	line:6
@@ -157,35 +166,36 @@ SnippetSerializer	../snippets/views4.py	/^from snippets.serializers import Snipp
 SnippetsConfig	../snippets/apps.py	/^class SnippetsConfig(AppConfig):$/;"	kind:class	line:4
 SocialLoginView	../apiAdmin/views_social.py	/^from rest_auth.registration.views import SocialLoginView$/;"	kind:namespace	line:9
 StreamingHttpResponse	../experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
-SwaggerSchemaView	../tutorial/swagger.py	/^class SwaggerSchemaView(APIView):$/;"	kind:class	line:11
-TEMPLATES	../tutorial/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:96
-TIME_ZONE	../tutorial/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:166
+SwaggerSchemaView	../_main/swagger.py	/^class SwaggerSchemaView(APIView):$/;"	kind:class	line:11
+TEMPLATES	../_main/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:100
+TIME_ZONE	../_main/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:170
 TestCase	../apiAdmin/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TestCase	../experiments/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TestCase	../snippets/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TokenAuthentication	../apiAdmin/views.py	/^from rest_framework.authentication import TokenAuthentication$/;"	kind:namespace	line:11
-TwitterLogin	../tutorial/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
+TwitterLogin	../_main/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 TwitterLoginSerializer	../apiAdmin/views_social.py	/^from rest_auth.social_serializers import TwitterLoginSerializer$/;"	kind:namespace	line:11
-USE_I18N	../tutorial/settings.py	/^USE_I18N = True$/;"	kind:variable	line:168
-USE_L10N	../tutorial/settings.py	/^USE_L10N = True$/;"	kind:variable	line:170
-USE_TZ	../tutorial/settings.py	/^USE_TZ = True$/;"	kind:variable	line:172
+USE_I18N	../_main/settings.py	/^USE_I18N = True$/;"	kind:variable	line:172
+USE_L10N	../_main/settings.py	/^USE_L10N = True$/;"	kind:variable	line:174
+USE_TZ	../_main/settings.py	/^USE_TZ = True$/;"	kind:variable	line:176
 User	../apiAdmin/serializers.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:5
 User	../apiAdmin/views.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:4
 User	../snippets/serializers.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:6
 User	../snippets/views.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:13
 UserDetail	../snippets/views.py	/^class UserDetail(generics.RetrieveAPIView):$/;"	kind:class	line:48
 UserList	../snippets/views.py	/^class UserList(generics.ListAPIView):$/;"	kind:class	line:41
-UserRegister	../apiAdmin/views.py	/^class UserRegister(generics.CreateAPIView):$/;"	kind:class	line:32
+UserRegister	../apiAdmin/views.py	/^class UserRegister(generics.CreateAPIView):$/;"	kind:class	line:46
 UserRegisterSerializer	../apiAdmin/serializers.py	/^class UserRegisterSerializer(serializers.ModelSerializer):$/;"	kind:class	line:22
 UserRegisterSerializer	../apiAdmin/views.py	/^from apiAdmin.serializers import UserRegisterSerializer, UserSerializer, GroupSerializer$/;"	kind:namespace	line:18
 UserSerializer	../apiAdmin/serializers.py	/^class UserSerializer(serializers.ModelSerializer):$/;"	kind:class	line:8
 UserSerializer	../apiAdmin/views.py	/^from apiAdmin.serializers import UserRegisterSerializer, UserSerializer, GroupSerializer$/;"	kind:namespace	line:18
 UserSerializer	../snippets/serializers.py	/^class UserSerializer(serializers.HyperlinkedModelSerializer):$/;"	kind:class	line:49
 UserSerializer	../snippets/views.py	/^from snippets.serializers import UserSerializer$/;"	kind:namespace	line:17
-UserViewSet	../apiAdmin/views.py	/^class UserViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:41
-WSGI_APPLICATION	../tutorial/settings.py	/^WSGI_APPLICATION = 'tutorial.wsgi.application'$/;"	kind:variable	line:112
+UserViewSet	../apiAdmin/views.py	/^class UserViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:55
+WSGI_APPLICATION	../_main/settings.py	/^WSGI_APPLICATION = '_main.wsgi.application'$/;"	kind:variable	line:116
 __init__	../experiments/models.py	/^    def __init__(self, subject, message, from_addr, to_addrs):$/;"	kind:member	line:12
 __init__	../snippets/views0.py	/^    def __init__(self, data, **kwargs):$/;"	kind:member	line:20
+__init__.py	../_main/__init__.py	1;"	kind:file	line:1
 __init__.py	../apiAdmin/__init__.py	1;"	kind:file	line:1
 __init__.py	../apiAdmin/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../experiments/__init__.py	1;"	kind:file	line:1
@@ -193,38 +203,39 @@ __init__.py	../experiments/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../security/__init__.py	1;"	kind:file	line:1
 __init__.py	../snippets/__init__.py	1;"	kind:file	line:1
 __init__.py	../snippets/migrations/__init__.py	1;"	kind:file	line:1
-__init__.py	../tutorial/__init__.py	1;"	kind:file	line:1
 adapter_class	../apiAdmin/views_social.py	/^    adapter_class = FacebookOAuth2Adapter$/;"	kind:variable	line:19
 adapter_class	../apiAdmin/views_social.py	/^    adapter_class = GoogleOAuth2Adapter$/;"	kind:variable	line:15
 add	../experiments/views_calculator.py	/^def add(request, numbers=None):$/;"	kind:function	line:16
+admin	../_main/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
 admin	../apiAdmin/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	../experiments/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	../snippets/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
-admin	../tutorial/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
 admin.py	../apiAdmin/admin.py	1;"	kind:file	line:1
 admin.py	../experiments/admin.py	1;"	kind:file	line:1
 admin.py	../snippets/admin.py	1;"	kind:file	line:1
+api_helloworld	../apiAdmin/views.py	/^def api_helloworld(request, format=None):$/;"	kind:function	line:34
+api_helloworld_protected	../apiAdmin/views.py	/^def api_helloworld_protected(request, format=None):$/;"	kind:function	line:41
 api_root	../apiAdmin/views.py	/^def api_root(request, format=None):$/;"	kind:function	line:23
 api_view	../apiAdmin/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
 api_view	../experiments/views_calculator.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:9
 api_view	../experiments/views_file.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:11
 api_view	../snippets/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:8
 api_view	../snippets/views1.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
-application	../tutorial/wsgi.py	/^application = DjangoWhiteNoise(application)$/;"	kind:variable	line:18
-application	../tutorial/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:17
+application	../_main/wsgi.py	/^application = DjangoWhiteNoise(application)$/;"	kind:variable	line:18
+application	../_main/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:17
 apps.py	../apiAdmin/apps.py	1;"	kind:file	line:1
 apps.py	../experiments/apps.py	1;"	kind:file	line:1
 apps.py	../snippets/apps.py	1;"	kind:file	line:1
 authenticate	../security/permissions.py	/^    def authenticate(self, request):$/;"	kind:member	line:48
-authentication_classes	../apiAdmin/views.py	/^    authentication_classes = (TokenAuthentication,)$/;"	kind:variable	line:65
+authentication_classes	../apiAdmin/views.py	/^    authentication_classes = (TokenAuthentication,)$/;"	kind:variable	line:79
 code	../snippets/models.py	/^    code = models.TextField()$/;"	kind:variable	line:19
 create	../apiAdmin/serializers.py	/^    def create(self, validated_data):$/;"	kind:member	line:30
 create	../experiments/serializers.py	/^    def create(self, validated_data):$/;"	kind:member	line:15
 created	../snippets/models.py	/^    created = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:17
+csrf_exempt	../_main/urls.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:19
 csrf_exempt	../snippets/views0.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:6
-csrf_exempt	../tutorial/urls.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:19
 db	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
-db_from_env	../tutorial/settings.py	/^db_from_env = dj_database_url.config(conn_max_age=500)$/;"	kind:variable	line:177
+db_from_env	../_main/settings.py	/^db_from_env = dj_database_url.config(conn_max_age=500)$/;"	kind:variable	line:181
 default	../snippets/models.py	/^                              default=None)$/;"	kind:variable	line:27
 delete	../snippets/views2.py	/^    def delete(self, request, pk, format=None):$/;"	kind:member	line:67
 delete	../snippets/views3.py	/^    def delete(self, request, *args, **kwargs):$/;"	kind:member	line:50
@@ -234,8 +245,9 @@ dependencies	../snippets/migrations/0001_initial.py	/^    dependencies = [$/;"	k
 dependencies	../snippets/migrations/0002_auto_20170208_2231.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../snippets/migrations/0003_auto_20170208_2246.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../snippets/migrations/0004_auto_20170209_1715.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../snippets/migrations/0005_auto_20170403_2143.py	/^    dependencies = [$/;"	kind:variable	line:10
 dirname	../manage.py	/^from os.path import join, dirname$/;"	kind:namespace	line:5
-dj_database_url	../tutorial/settings.py	/^import dj_database_url$/;"	kind:namespace	line:14
+dj_database_url	../_main/settings.py	/^import dj_database_url$/;"	kind:namespace	line:14
 django	../manage.py	/^            import django$/;"	kind:namespace	line:17
 django	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
 dotenv_path	../manage.py	/^    dotenv_path = join(dirname(__file__), '.env')$/;"	kind:variable	line:28
@@ -243,6 +255,7 @@ execute_from_command_line	../manage.py	/^        from django.core.management imp
 extra_kwargs	../apiAdmin/serializers.py	/^        extra_kwargs = {'password': {'write_only': True}}$/;"	kind:variable	line:28
 field	../snippets/migrations/0004_auto_20170209_1715.py	/^            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='snippets', to=settings.AUTH_USER_MODEL),$/;"	kind:variable	line:26
 field	../snippets/migrations/0004_auto_20170209_1715.py	/^            field=models.TextField(blank=True, default=None, null=True),$/;"	kind:variable	line:21
+field	../snippets/migrations/0005_auto_20170403_2143.py	/^            field=models.CharField(choices=[('abap', 'ABAP'), ('abnf', 'ABNF'), ('ada', 'Ada'), ('adl', 'ADL'), ('agda', 'Agda'), ('aheui', 'Aheui'), ('ahk', 'autohotkey'), ('alloy', 'Alloy'), ('ampl', 'Ampl'), ('antlr', 'ANTLR'), ('antlr-as', 'ANTLR With ActionScript Target'), ('antlr-cpp', 'ANTLR With CPP Target'), ('antlr-csharp', 'ANTLR With C# Target'), ('antlr-java', 'ANTLR With Java Target'), ('antlr-objc', 'ANTLR With ObjectiveC Target'), ('antlr-perl', 'ANTLR With Perl Target'), ('antlr-python', 'ANTLR With Python Target'), ('antlr-ruby', 'ANTLR With Ruby Target'), ('apacheconf', 'ApacheConf'), ('apl', 'APL'), ('applescript', 'AppleScript'), ('arduino', 'Arduino'), ('as', 'ActionScript'), ('as3', 'ActionScript 3'), ('aspectj', 'AspectJ'), ('aspx-cs', 'aspx-cs'), ('aspx-vb', 'aspx-vb'), ('asy', 'Asymptote'), ('at', 'AmbientTalk'), ('autoit', 'AutoIt'), ('awk', 'Awk'), ('basemake', 'Base Makefile'), ('bash', 'Bash'), ('bat', 'Batchfile'), ('bbcode', 'BBCode'), ('bc', 'BC'), ('befunge', 'Befunge'), ('bib', 'BibTeX'), ('blitzbasic', 'BlitzBasic'), ('blitzmax', 'BlitzMax'), ('bnf', 'BNF'), ('boo', 'Boo'), ('boogie', 'Boogie'), ('brainfuck', 'Brainfuck'), ('bro', 'Bro'), ('bst', 'BST'), ('bugs', 'BUGS'), ('c', 'C'), ('c-objdump', 'c-objdump'), ('ca65', 'ca65 assembler'), ('cadl', 'cADL'), ('camkes', 'CAmkES'), ('capdl', 'CapDL'), ('capnp', "Cap'n Proto"), ('cbmbas', 'CBM BASIC V2'), ('ceylon', 'Ceylon'), ('cfc', 'Coldfusion CFC'), ('cfengine3', 'CFEngine3'), ('cfm', 'Coldfusion HTML'), ('cfs', 'cfstatement'), ('chai', 'ChaiScript'), ('chapel', 'Chapel'), ('cheetah', 'Cheetah'), ('cirru', 'Cirru'), ('clay', 'Clay'), ('clean', 'Clean'), ('clojure', 'Clojure'), ('clojurescript', 'ClojureScript'), ('cmake', 'CMake'), ('cobol', 'COBOL'), ('cobolfree', 'COBOLFree'), ('coffee-script', 'CoffeeScript'), ('common-lisp', 'Common Lisp'), ('componentpascal', 'Component Pascal'), ('console', 'Bash Session'), ('control', 'Debian Control file'), ('coq', 'Coq'), ('cpp', 'C++'), ('cpp-objdump', 'cpp-objdump'), ('cpsa', 'CPSA'), ('cr', 'Crystal'), ('crmsh', 'Crmsh'), ('croc', 'Croc'), ('cryptol', 'Cryptol'), ('csharp', 'C#'), ('csound', 'Csound Orchestra'), ('csound-document', 'Csound Document'), ('csound-score', 'Csound Score'), ('css', 'CSS'), ('css+django', 'CSS+Django\/Jinja'), ('css+erb', 'CSS+Ruby'), ('css+genshitext', 'CSS+Genshi Text'), ('css+lasso', 'CSS+Lasso'), ('css+mako', 'CSS+Mako'), ('css+mako', 'CSS+Mako'), ('css+mozpreproc', 'CSS+mozpreproc'), ('css+myghty', 'CSS+Myghty'), ('css+php', 'CSS+PHP'), ('css+smarty', 'CSS+Smarty'), ('cucumber', 'Gherkin'), ('cuda', 'CUDA'), ('cypher', 'Cypher'), ('cython', 'Cython'), ('d', 'D'), ('d-objdump', 'd-objdump'), ('dart', 'Dart'), ('delphi', 'Delphi'), ('dg', 'dg'), ('diff', 'Diff'), ('django', 'Django\/Jinja'), ('docker', 'Docker'), ('doscon', 'MSDOS Session'), ('dpatch', 'Darcs Patch'), ('dtd', 'DTD'), ('duel', 'Duel'), ('dylan', 'Dylan'), ('dylan-console', 'Dylan session'), ('dylan-lid', 'DylanLID'), ('earl-grey', 'Earl Grey'), ('easytrieve', 'Easytrieve'), ('ebnf', 'EBNF'), ('ec', 'eC'), ('ecl', 'ECL'), ('eiffel', 'Eiffel'), ('elixir', 'Elixir'), ('elm', 'Elm'), ('emacs', 'EmacsLisp'), ('erb', 'ERB'), ('erl', 'Erlang erl session'), ('erlang', 'Erlang'), ('evoque', 'Evoque'), ('extempore', 'xtlang'), ('ezhil', 'Ezhil'), ('factor', 'Factor'), ('fan', 'Fantom'), ('fancy', 'Fancy'), ('felix', 'Felix'), ('fish', 'Fish'), ('flatline', 'Flatline'), ('forth', 'Forth'), ('fortran', 'Fortran'), ('fortranfixed', 'FortranFixed'), ('foxpro', 'FoxPro'), ('fsharp', 'FSharp'), ('gap', 'GAP'), ('gas', 'GAS'), ('genshi', 'Genshi'), ('genshitext', 'Genshi Text'), ('glsl', 'GLSL'), ('gnuplot', 'Gnuplot'), ('go', 'Go'), ('golo', 'Golo'), ('gooddata-cl', 'GoodData-CL'), ('gosu', 'Gosu'), ('groff', 'Groff'), ('groovy', 'Groovy'), ('gst', 'Gosu Template'), ('haml', 'Haml'), ('handlebars', 'Handlebars'), ('haskell', 'Haskell'), ('haxeml', 'Hxml'), ('hexdump', 'Hexdump'), ('hsail', 'HSAIL'), ('html', 'HTML'), ('html+cheetah', 'HTML+Cheetah'), ('html+django', 'HTML+Django\/Jinja'), ('html+evoque', 'HTML+Evoque'), ('html+genshi', 'HTML+Genshi'), ('html+handlebars', 'HTML+Handlebars'), ('html+lasso', 'HTML+Lasso'), ('html+mako', 'HTML+Mako'), ('html+mako', 'HTML+Mako'), ('html+myghty', 'HTML+Myghty'), ('html+ng2', 'HTML + Angular2'), ('html+php', 'HTML+PHP'), ('html+smarty', 'HTML+Smarty'), ('html+twig', 'HTML+Twig'), ('html+velocity', 'HTML+Velocity'), ('http', 'HTTP'), ('hx', 'Haxe'), ('hybris', 'Hybris'), ('hylang', 'Hy'), ('i6t', 'Inform 6 template'), ('idl', 'IDL'), ('idris', 'Idris'), ('iex', 'Elixir iex session'), ('igor', 'Igor'), ('inform6', 'Inform 6'), ('inform7', 'Inform 7'), ('ini', 'INI'), ('io', 'Io'), ('ioke', 'Ioke'), ('irc', 'IRC logs'), ('isabelle', 'Isabelle'), ('j', 'J'), ('jags', 'JAGS'), ('jasmin', 'Jasmin'), ('java', 'Java'), ('javascript+mozpreproc', 'Javascript+mozpreproc'), ('jcl', 'JCL'), ('jlcon', 'Julia console'), ('js', 'JavaScript'), ('js+cheetah', 'JavaScript+Cheetah'), ('js+django', 'JavaScript+Django\/Jinja'), ('js+erb', 'JavaScript+Ruby'), ('js+genshitext', 'JavaScript+Genshi Text'), ('js+lasso', 'JavaScript+Lasso'), ('js+mako', 'JavaScript+Mako'), ('js+mako', 'JavaScript+Mako'), ('js+myghty', 'JavaScript+Myghty'), ('js+php', 'JavaScript+PHP'), ('js+smarty', 'JavaScript+Smarty'), ('jsgf', 'JSGF'), ('json', 'JSON'), ('json-object', 'JSONBareObject'), ('jsonld', 'JSON-LD'), ('jsp', 'Java Server Page'), ('julia', 'Julia'), ('juttle', 'Juttle'), ('kal', 'Kal'), ('kconfig', 'Kconfig'), ('koka', 'Koka'), ('kotlin', 'Kotlin'), ('lagda', 'Literate Agda'), ('lasso', 'Lasso'), ('lcry', 'Literate Cryptol'), ('lean', 'Lean'), ('less', 'LessCss'), ('lhs', 'Literate Haskell'), ('lidr', 'Literate Idris'), ('lighty', 'Lighttpd configuration file'), ('limbo', 'Limbo'), ('liquid', 'liquid'), ('live-script', 'LiveScript'), ('llvm', 'LLVM'), ('logos', 'Logos'), ('logtalk', 'Logtalk'), ('lsl', 'LSL'), ('lua', 'Lua'), ('make', 'Makefile'), ('mako', 'Mako'), ('mako', 'Mako'), ('maql', 'MAQL'), ('mask', 'Mask'), ('mason', 'Mason'), ('mathematica', 'Mathematica'), ('matlab', 'Matlab'), ('matlabsession', 'Matlab session'), ('md', 'markdown'), ('minid', 'MiniD'), ('modelica', 'Modelica'), ('modula2', 'Modula-2'), ('monkey', 'Monkey'), ('monte', 'Monte'), ('moocode', 'MOOCode'), ('moon', 'MoonScript'), ('mozhashpreproc', 'mozhashpreproc'), ('mozpercentpreproc', 'mozpercentpreproc'), ('mql', 'MQL'), ('mscgen', 'Mscgen'), ('mupad', 'MuPAD'), ('mxml', 'MXML'), ('myghty', 'Myghty'), ('mysql', 'MySQL'), ('nasm', 'NASM'), ('ncl', 'NCL'), ('nemerle', 'Nemerle'), ('nesc', 'nesC'), ('newlisp', 'NewLisp'), ('newspeak', 'Newspeak'), ('ng2', 'Angular2'), ('nginx', 'Nginx configuration file'), ('nim', 'Nimrod'), ('nit', 'Nit'), ('nixos', 'Nix'), ('nsis', 'NSIS'), ('numpy', 'NumPy'), ('nusmv', 'NuSMV'), ('objdump', 'objdump'), ('objdump-nasm', 'objdump-nasm'), ('objective-c', 'Objective-C'), ('objective-c++', 'Objective-C++'), ('objective-j', 'Objective-J'), ('ocaml', 'OCaml'), ('octave', 'Octave'), ('odin', 'ODIN'), ('ooc', 'Ooc'), ('opa', 'Opa'), ('openedge', 'OpenEdge ABL'), ('pacmanconf', 'PacmanConf'), ('pan', 'Pan'), ('parasail', 'ParaSail'), ('pawn', 'Pawn'), ('perl', 'Perl'), ('perl6', 'Perl6'), ('php', 'PHP'), ('pig', 'Pig'), ('pike', 'Pike'), ('pkgconfig', 'PkgConfig'), ('plpgsql', 'PL\/pgSQL'), ('postgresql', 'PostgreSQL SQL dialect'), ('postscript', 'PostScript'), ('pot', 'Gettext Catalog'), ('pov', 'POVRay'), ('powershell', 'PowerShell'), ('praat', 'Praat'), ('prolog', 'Prolog'), ('properties', 'Properties'), ('protobuf', 'Protocol Buffer'), ('ps1con', 'PowerShell Session'), ('psql', 'PostgreSQL console (psql)'), ('pug', 'Pug'), ('puppet', 'Puppet'), ('py3tb', 'Python 3.0 Traceback'), ('pycon', 'Python console session'), ('pypylog', 'PyPy Log'), ('pytb', 'Python Traceback'), ('python', 'Python'), ('python3', 'Python 3'), ('qbasic', 'QBasic'), ('qml', 'QML'), ('qvto', 'QVTO'), ('racket', 'Racket'), ('ragel', 'Ragel'), ('ragel-c', 'Ragel in C Host'), ('ragel-cpp', 'Ragel in CPP Host'), ('ragel-d', 'Ragel in D Host'), ('ragel-em', 'Embedded Ragel'), ('ragel-java', 'Ragel in Java Host'), ('ragel-objc', 'Ragel in Objective C Host'), ('ragel-ruby', 'Ragel in Ruby Host'), ('raw', 'Raw token data'), ('rb', 'Ruby'), ('rbcon', 'Ruby irb session'), ('rconsole', 'RConsole'), ('rd', 'Rd'), ('rebol', 'REBOL'), ('red', 'Red'), ('redcode', 'Redcode'), ('registry', 'reg'), ('resource', 'ResourceBundle'), ('rexx', 'Rexx'), ('rhtml', 'RHTML'), ('rnc', 'Relax-NG Compact'), ('roboconf-graph', 'Roboconf Graph'), ('roboconf-instances', 'Roboconf Instances'), ('robotframework', 'RobotFramework'), ('rql', 'RQL'), ('rsl', 'RSL'), ('rst', 'reStructuredText'), ('rts', 'TrafficScript'), ('rust', 'Rust'), ('sas', 'SAS'), ('sass', 'Sass'), ('sc', 'SuperCollider'), ('scala', 'Scala'), ('scaml', 'Scaml'), ('scheme', 'Scheme'), ('scilab', 'Scilab'), ('scss', 'SCSS'), ('shen', 'Shen'), ('silver', 'Silver'), ('slim', 'Slim'), ('smali', 'Smali'), ('smalltalk', 'Smalltalk'), ('smarty', 'Smarty'), ('sml', 'Standard ML'), ('snobol', 'Snobol'), ('snowball', 'Snowball'), ('sourceslist', 'Debian Sourcelist'), ('sp', 'SourcePawn'), ('sparql', 'SPARQL'), ('spec', 'RPMSpec'), ('splus', 'S'), ('sql', 'SQL'), ('sqlite3', 'sqlite3con'), ('squidconf', 'SquidConf'), ('ssp', 'Scalate Server Page'), ('stan', 'Stan'), ('stata', 'Stata'), ('swift', 'Swift'), ('swig', 'SWIG'), ('systemverilog', 'systemverilog'), ('tads3', 'TADS 3'), ('tap', 'TAP'), ('tasm', 'TASM'), ('tcl', 'Tcl'), ('tcsh', 'Tcsh'), ('tcshcon', 'Tcsh Session'), ('tea', 'Tea'), ('termcap', 'Termcap'), ('terminfo', 'Terminfo'), ('terraform', 'Terraform'), ('tex', 'TeX'), ('text', 'Text only'), ('thrift', 'Thrift'), ('todotxt', 'Todotxt'), ('trac-wiki', 'MoinMoin\/Trac Wiki markup'), ('treetop', 'Treetop'), ('ts', 'TypeScript'), ('tsql', 'Transact-SQL'), ('turtle', 'Turtle'), ('twig', 'Twig'), ('typoscript', 'TypoScript'), ('typoscriptcssdata', 'TypoScriptCssData'), ('typoscripthtmldata', 'TypoScriptHtmlData'), ('urbiscript', 'UrbiScript'), ('vala', 'Vala'), ('vb.net', 'VB.net'), ('vcl', 'VCL'), ('vclsnippets', 'VCLSnippets'), ('vctreestatus', 'VCTreeStatus'), ('velocity', 'Velocity'), ('verilog', 'verilog'), ('vgl', 'VGL'), ('vhdl', 'vhdl'), ('vim', 'VimL'), ('wdiff', 'WDiff'), ('whiley', 'Whiley'), ('x10', 'X10'), ('xml', 'XML'), ('xml+cheetah', 'XML+Cheetah'), ('xml+django', 'XML+Django\/Jinja'), ('xml+erb', 'XML+Ruby'), ('xml+evoque', 'XML+Evoque'), ('xml+lasso', 'XML+Lasso'), ('xml+mako', 'XML+Mako'), ('xml+mako', 'XML+Mako'), ('xml+myghty', 'XML+Myghty'), ('xml+php', 'XML+PHP'), ('xml+smarty', 'XML+Smarty'), ('xml+velocity', 'XML+Velocity'), ('xquery', 'XQuery'), ('xslt', 'XSLT'), ('xtend', 'Xtend'), ('xul+mozpreproc', 'XUL+mozpreproc'), ('yaml', 'YAML'), ('yaml+jinja', 'YAML+Jinja'), ('zephir', 'Zephir')], default='python', max_length=100),$/;"	kind:variable	line:18
 fields	../apiAdmin/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:12
 fields	../apiAdmin/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:19
 fields	../apiAdmin/serializers.py	/^        fields = ('username', 'password', 'email', 'first_name', 'last_name')$/;"	kind:variable	line:26
@@ -259,30 +272,30 @@ generics	../experiments/views.py	/^from rest_framework import generics$/;"	kind:
 generics	../snippets/views.py	/^from rest_framework import generics$/;"	kind:namespace	line:6
 generics	../snippets/views3.py	/^from rest_framework import generics$/;"	kind:namespace	line:7
 generics	../snippets/views4.py	/^from rest_framework import generics$/;"	kind:namespace	line:6
+get	../_main/swagger.py	/^    def get(self, request):$/;"	kind:member	line:18
 get	../snippets/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:61
 get	../snippets/views2.py	/^    def get(self, request, format=None):$/;"	kind:member	line:24
 get	../snippets/views2.py	/^    def get(self, request, pk, format=None):$/;"	kind:member	line:53
 get	../snippets/views3.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:25
 get	../snippets/views3.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:44
-get	../tutorial/swagger.py	/^    def get(self, request):$/;"	kind:member	line:18
 get_all_lexers	../snippets/models.py	/^from pygments.lexers import get_all_lexers$/;"	kind:namespace	line:5
 get_all_styles	../snippets/models.py	/^from pygments.styles import get_all_styles$/;"	kind:namespace	line:6
 get_file_http_response	../experiments/views_file.py	/^def get_file_http_response(file, guess_type, attachment):$/;"	kind:function	line:17
 get_lexer_by_name	../snippets/models.py	/^from pygments.lexers import get_lexer_by_name$/;"	kind:namespace	line:7
 get_object	../snippets/views2.py	/^    def get_object(self, pk):$/;"	kind:member	line:47
-get_schema_view	../tutorial/urls.py	/^from rest_framework.schemas import get_schema_view$/;"	kind:namespace	line:24
-get_swagger_view	../tutorial/urls.py	/^from rest_framework_swagger.views import get_swagger_view$/;"	kind:namespace	line:23
-get_wsgi_application	../tutorial/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
+get_schema_view	../_main/urls.py	/^from rest_framework.schemas import get_schema_view$/;"	kind:namespace	line:24
+get_swagger_view	../_main/urls.py	/^from rest_framework_swagger.views import get_swagger_view$/;"	kind:namespace	line:23
+get_wsgi_application	../_main/wsgi.py	/^from django.core.wsgi import get_wsgi_application$/;"	kind:namespace	line:12
 has_object_permission	../security/permissions.py	/^    def has_object_permission(self, request, view, obj):$/;"	kind:member	line:11
 has_permission	../security/permissions.py	/^    def has_permission(self, request, view):$/;"	kind:member	line:26
 has_permission	../security/permissions.py	/^    def has_permission(self, request, view):$/;"	kind:member	line:40
 highlight	../snippets/models.py	/^from pygments import highlight$/;"	kind:namespace	line:9
 highlight	../snippets/serializers.py	/^    highlight = serializers.HyperlinkedIdentityField($/;"	kind:variable	line:11
 highlighted	../snippets/models.py	/^    highlighted = models.TextField(null=True, blank=True, default=None)$/;"	kind:variable	line:28
+include	../_main/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
 include	../apiAdmin/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 include	../experiments/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 include	../snippets/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
-include	../tutorial/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
 initial	../experiments/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
 initial	../snippets/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
 is_authenticated	../security/permissions.py	/^from rest_framework.compat import is_authenticated$/;"	kind:namespace	line:2
@@ -299,6 +312,7 @@ migrations	../snippets/migrations/0001_initial.py	/^from django.db import migrat
 migrations	../snippets/migrations/0002_auto_20170208_2231.py	/^from django.db import migrations$/;"	kind:namespace	line:5
 migrations	../snippets/migrations/0003_auto_20170208_2246.py	/^from django.db import migrations$/;"	kind:namespace	line:5
 migrations	../snippets/migrations/0004_auto_20170209_1715.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+migrations	../snippets/migrations/0005_auto_20170403_2143.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 mimetypes	../experiments/views_file.py	/^import mimetypes$/;"	kind:namespace	line:4
 mixins	../experiments/views.py	/^from rest_framework import mixins$/;"	kind:namespace	line:3
 mixins	../snippets/views3.py	/^from rest_framework import mixins$/;"	kind:namespace	line:6
@@ -310,12 +324,14 @@ model	../snippets/serializers.py	/^        model = Snippet$/;"	kind:variable	lin
 model	../snippets/serializers.py	/^        model = User$/;"	kind:variable	line:55
 model_name	../snippets/migrations/0004_auto_20170209_1715.py	/^            model_name='snippet',$/;"	kind:variable	line:19
 model_name	../snippets/migrations/0004_auto_20170209_1715.py	/^            model_name='snippet',$/;"	kind:variable	line:24
+model_name	../snippets/migrations/0005_auto_20170403_2143.py	/^            model_name='snippet',$/;"	kind:variable	line:16
 models	../apiAdmin/models.py	/^from django.db import models$/;"	kind:namespace	line:1
 models	../experiments/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../experiments/models.py	/^from django.db import models$/;"	kind:namespace	line:1
 models	../snippets/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../snippets/migrations/0004_auto_20170209_1715.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
 models	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+models	../snippets/migrations/0005_auto_20170403_2143.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../snippets/models.py	/^from django.db import models$/;"	kind:namespace	line:4
 models.py	../apiAdmin/models.py	1;"	kind:file	line:1
 models.py	../experiments/models.py	1;"	kind:file	line:1
@@ -329,33 +345,36 @@ name	../snippets/migrations/0002_auto_20170208_2231.py	/^            name='snipp
 name	../snippets/migrations/0003_auto_20170208_2246.py	/^            name='snippet',$/;"	kind:variable	line:16
 name	../snippets/migrations/0004_auto_20170209_1715.py	/^            name='highlighted',$/;"	kind:variable	line:20
 name	../snippets/migrations/0004_auto_20170209_1715.py	/^            name='owner',$/;"	kind:variable	line:25
+name	../snippets/migrations/0005_auto_20170403_2143.py	/^            name='language',$/;"	kind:variable	line:17
 name	../snippets/urls.py	/^        name='snippet-detail'),$/;"	kind:variable	line:18
 name	../snippets/urls.py	/^        name='snippet-highlight'),$/;"	kind:variable	line:21
 name	../snippets/urls.py	/^        name='snippet-list'),$/;"	kind:variable	line:15
 name	../snippets/urls.py	/^        name='snippets-user-detail')$/;"	kind:variable	line:27
 name	../snippets/urls.py	/^        name='snippets-user-list'),$/;"	kind:variable	line:24
-namespace	../tutorial/urls.py	/^                               namespace='rest_framework')),$/;"	kind:variable	line:49
+namespace	../_main/urls.py	/^                               namespace='rest_framework')),$/;"	kind:variable	line:50
 operations	../experiments/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
 operations	../snippets/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
 operations	../snippets/migrations/0002_auto_20170208_2231.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../snippets/migrations/0003_auto_20170208_2246.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../snippets/migrations/0004_auto_20170209_1715.py	/^    operations = [$/;"	kind:variable	line:17
+operations	../snippets/migrations/0005_auto_20170403_2143.py	/^    operations = [$/;"	kind:variable	line:14
 options	../experiments/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:25
 options	../snippets/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:27
 options	../snippets/migrations/0002_auto_20170208_2231.py	/^            options={},$/;"	kind:variable	line:17
 options	../snippets/migrations/0003_auto_20170208_2246.py	/^            options={'ordering': ('created', 'title')},$/;"	kind:variable	line:17
 ordering	../snippets/models.py	/^        ordering = ('created', 'title')$/;"	kind:variable	line:44
+os	../_main/settings.py	/^import os$/;"	kind:namespace	line:13
+os	../_main/wsgi.py	/^import os$/;"	kind:namespace	line:10
 os	../experiments/views_file.py	/^import os$/;"	kind:namespace	line:3
 os	../manage.py	/^import os$/;"	kind:namespace	line:2
-os	../tutorial/settings.py	/^import os$/;"	kind:namespace	line:13
-os	../tutorial/wsgi.py	/^import os$/;"	kind:namespace	line:10
 owner	../snippets/models.py	/^    owner = models.ForeignKey('auth.User', related_name='snippets',$/;"	kind:variable	line:25
 owner	../snippets/serializers.py	/^    owner = serializers.ReadOnlyField(source='owner.username')$/;"	kind:variable	line:10
 pdf	../experiments/views_file.py	/^def pdf(request):$/;"	kind:function	line:34
 perform_create	../snippets/views.py	/^    def perform_create(self, serializer):$/;"	kind:member	line:29
-permission_classes	../apiAdmin/views.py	/^    permission_classes = (IsAuthenticatedOrCreate,)$/;"	kind:variable	line:38
-permission_classes	../apiAdmin/views.py	/^    permission_classes = [IsSuperUserOrAuthenticated, ]$/;"	kind:variable	line:45
-permission_classes	../apiAdmin/views.py	/^    permission_classes = [IsSuperUserOrAuthenticated, ]$/;"	kind:variable	line:54
+permission_classes	../_main/swagger.py	/^    permission_classes = [AllowAny]$/;"	kind:variable	line:12
+permission_classes	../apiAdmin/views.py	/^    permission_classes = (IsAuthenticatedOrCreate,)$/;"	kind:variable	line:52
+permission_classes	../apiAdmin/views.py	/^    permission_classes = [IsSuperUserOrAuthenticated, ]$/;"	kind:variable	line:59
+permission_classes	../apiAdmin/views.py	/^    permission_classes = [IsSuperUserOrAuthenticated, ]$/;"	kind:variable	line:68
 permission_classes	../apiAdmin/views.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:7
 permission_classes	../experiments/views.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:18
 permission_classes	../experiments/views_calculator.py	/^from rest_framework.decorators import api_view, permission_classes$/;"	kind:namespace	line:9
@@ -373,7 +392,6 @@ permission_classes	../snippets/views3.py	/^    permission_classes = (permissions
 permission_classes	../snippets/views3.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:23
 permission_classes	../snippets/views4.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,$/;"	kind:variable	line:29
 permission_classes	../snippets/views4.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:20
-permission_classes	../tutorial/swagger.py	/^    permission_classes = [AllowAny]$/;"	kind:variable	line:12
 permissions	../apiAdmin/views.py	/^from rest_framework import permissions, generics$/;"	kind:namespace	line:6
 permissions	../experiments/views.py	/^from rest_framework import permissions$/;"	kind:namespace	line:5
 permissions	../experiments/views_calculator.py	/^from rest_framework import permissions$/;"	kind:namespace	line:7
@@ -391,9 +409,9 @@ post	../snippets/views2.py	/^    def post(self, request, format=None):$/;"	kind:
 post	../snippets/views3.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:28
 put	../snippets/views2.py	/^    def put(self, request, pk, format=None):$/;"	kind:member	line:58
 put	../snippets/views3.py	/^    def put(self, request, *args, **kwargs):$/;"	kind:member	line:47
-queryset	../apiAdmin/views.py	/^    queryset = Group.objects.all()$/;"	kind:variable	line:56
-queryset	../apiAdmin/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:36
-queryset	../apiAdmin/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:46
+queryset	../apiAdmin/views.py	/^    queryset = Group.objects.all()$/;"	kind:variable	line:70
+queryset	../apiAdmin/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:50
+queryset	../apiAdmin/views.py	/^    queryset = User.objects.all()$/;"	kind:variable	line:60
 queryset	../snippets/views.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:25
 queryset	../snippets/views.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:35
 queryset	../snippets/views.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:57
@@ -406,21 +424,21 @@ queryset	../snippets/views4.py	/^    queryset = Snippet.objects.all()$/;"	kind:v
 read_only	../snippets/serializers.py	/^                                                   read_only=True)$/;"	kind:variable	line:52
 render	../experiments/views_calculator.py	/^from django.shortcuts import render$/;"	kind:namespace	line:3
 render	../experiments/views_file.py	/^from django.shortcuts import render$/;"	kind:namespace	line:5
+renderer_classes	../_main/swagger.py	/^    renderer_classes = [$/;"	kind:variable	line:13
 renderer_classes	../snippets/views.py	/^    renderer_classes = (renderers.StaticHTMLRenderer,)$/;"	kind:variable	line:58
-renderer_classes	../tutorial/swagger.py	/^    renderer_classes = [$/;"	kind:variable	line:13
+renderers	../_main/swagger.py	/^from rest_framework_swagger import renderers$/;"	kind:namespace	line:8
 renderers	../snippets/views.py	/^from rest_framework import renderers$/;"	kind:namespace	line:11
-renderers	../tutorial/swagger.py	/^from rest_framework_swagger import renderers$/;"	kind:namespace	line:8
-required_scopes	../apiAdmin/views.py	/^    required_scopes = ['groups']$/;"	kind:variable	line:55
+required_scopes	../apiAdmin/views.py	/^    required_scopes = ['groups']$/;"	kind:variable	line:69
 reverse	../apiAdmin/views.py	/^from rest_framework.reverse import reverse$/;"	kind:namespace	line:9
 reverse	../snippets/views.py	/^from rest_framework.reverse import reverse$/;"	kind:namespace	line:10
 router	../apiAdmin/urls.py	/^router = SimpleRouter()$/;"	kind:variable	line:8
-routers	../tutorial/urls.py	/^from rest_framework import routers$/;"	kind:namespace	line:22
+routers	../_main/urls.py	/^from rest_framework import routers$/;"	kind:namespace	line:22
 save	../snippets/models.py	/^    def save(self, *args, **kwargs):$/;"	kind:member	line:30
-schema_view	../tutorial/urls.py	/^schema_view = get_schema_view(title=settings.API_NAME)$/;"	kind:variable	line:35
+schema_view	../_main/urls.py	/^schema_view = get_schema_view(title=settings.API_NAME)$/;"	kind:variable	line:35
 send_mail	../experiments/serializers.py	/^from django.core.mail import send_mail$/;"	kind:namespace	line:6
-serializer_class	../apiAdmin/views.py	/^    serializer_class = GroupSerializer$/;"	kind:variable	line:57
-serializer_class	../apiAdmin/views.py	/^    serializer_class = UserRegisterSerializer$/;"	kind:variable	line:37
-serializer_class	../apiAdmin/views.py	/^    serializer_class = UserSerializer$/;"	kind:variable	line:47
+serializer_class	../apiAdmin/views.py	/^    serializer_class = GroupSerializer$/;"	kind:variable	line:71
+serializer_class	../apiAdmin/views.py	/^    serializer_class = UserRegisterSerializer$/;"	kind:variable	line:51
+serializer_class	../apiAdmin/views.py	/^    serializer_class = UserSerializer$/;"	kind:variable	line:61
 serializer_class	../experiments/views.py	/^    serializer_class = SimpleEmailMessssageSerializer$/;"	kind:variable	line:17
 serializer_class	../snippets/views.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:26
 serializer_class	../snippets/views.py	/^    serializer_class = SnippetSerializer$/;"	kind:variable	line:36
@@ -437,12 +455,12 @@ serializers	../snippets/serializers.py	/^from rest_framework import serializers$
 serializers.py	../apiAdmin/serializers.py	1;"	kind:file	line:1
 serializers.py	../experiments/serializers.py	1;"	kind:file	line:1
 serializers.py	../snippets/serializers.py	1;"	kind:file	line:1
+settings	../_main/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:18
 settings	../experiments/views_calculator.py	/^from django.conf import settings$/;"	kind:namespace	line:5
 settings	../experiments/views_file.py	/^from django.conf import settings$/;"	kind:namespace	line:7
 settings	../snippets/migrations/0004_auto_20170209_1715.py	/^from django.conf import settings$/;"	kind:namespace	line:5
 settings	../snippets/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:2
-settings	../tutorial/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:18
-settings.py	../tutorial/settings.py	1;"	kind:file	line:1
+settings.py	../_main/settings.py	1;"	kind:file	line:1
 snippet_detail	../snippets/views0.py	/^def snippet_detail(request, pk):$/;"	kind:function	line:47
 snippet_detail	../snippets/views1.py	/^def snippet_detail(request, pk, format=None):$/;"	kind:function	line:51
 snippet_list	../snippets/views0.py	/^def snippet_list(request):$/;"	kind:function	line:27
@@ -454,8 +472,8 @@ status	../snippets/views1.py	/^from rest_framework import status$/;"	kind:namesp
 status	../snippets/views2.py	/^from rest_framework import status$/;"	kind:namespace	line:7
 style	../snippets/models.py	/^    style = models.CharField(choices=STYLE_CHOICES,$/;"	kind:variable	line:23
 subject	../experiments/models.py	/^    subject = models.CharField(max_length=256)$/;"	kind:variable	line:7
-swagger.py	../tutorial/swagger.py	1;"	kind:file	line:1
-swagger_view	../tutorial/urls.py	/^swagger_view = get_swagger_view(title=settings.API_NAME)$/;"	kind:variable	line:31
+swagger.py	../_main/swagger.py	1;"	kind:file	line:1
+swagger_view	../_main/urls.py	/^swagger_view = get_swagger_view(title=settings.API_NAME)$/;"	kind:variable	line:31
 sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
 tests.py	../apiAdmin/tests.py	1;"	kind:file	line:1
 tests.py	../experiments/tests.py	1;"	kind:file	line:1
@@ -467,18 +485,19 @@ unicode_literals	../snippets/migrations/0001_initial.py	/^from __future__ import
 unicode_literals	../snippets/migrations/0002_auto_20170208_2231.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0003_auto_20170208_2246.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0004_auto_20170209_1715.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../snippets/migrations/0005_auto_20170403_2143.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+url	../_main/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
 url	../apiAdmin/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 url	../experiments/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 url	../snippets/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
-url	../tutorial/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
+urlpatterns	../_main/urls.py	/^urlpatterns = [$/;"	kind:variable	line:41
 urlpatterns	../apiAdmin/urls.py	/^urlpatterns = [$/;"	kind:variable	line:13
 urlpatterns	../experiments/urls.py	/^urlpatterns = [$/;"	kind:variable	line:8
 urlpatterns	../snippets/urls.py	/^urlpatterns = [$/;"	kind:variable	line:12
-urlpatterns	../tutorial/urls.py	/^urlpatterns = [$/;"	kind:variable	line:40
+urls.py	../_main/urls.py	1;"	kind:file	line:1
 urls.py	../apiAdmin/urls.py	1;"	kind:file	line:1
 urls.py	../experiments/urls.py	1;"	kind:file	line:1
 urls.py	../snippets/urls.py	1;"	kind:file	line:1
-urls.py	../tutorial/urls.py	1;"	kind:file	line:1
 view_name	../snippets/serializers.py	/^                                                   view_name='snippet-detail',$/;"	kind:variable	line:51
 views	../apiAdmin/urls.py	/^from apiAdmin import views$/;"	kind:namespace	line:5
 views	../experiments/urls.py	/^from experiments import views_calculator, views_file, views$/;"	kind:namespace	line:5
@@ -502,5 +521,5 @@ views_file	../experiments/urls.py	/^from experiments import views_calculator, vi
 views_file.py	../experiments/views_file.py	1;"	kind:file	line:1
 views_social.py	../apiAdmin/views_social.py	1;"	kind:file	line:1
 viewsets	../apiAdmin/views.py	/^from rest_framework import serializers, viewsets$/;"	kind:namespace	line:14
-wsgi.py	../tutorial/wsgi.py	1;"	kind:file	line:1
+wsgi.py	../_main/wsgi.py	1;"	kind:file	line:1
 zip	../experiments/views_file.py	/^def zip(request):$/;"	kind:function	line:40

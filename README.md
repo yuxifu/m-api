@@ -1,4 +1,4 @@
-# Django REST framework tutorial project
+# Django REST framework comprehensive starting project
 
 A starter project template to build a robust RESTful Web API using [Django REST framework](http://www.django-rest-framework.org/) .
 

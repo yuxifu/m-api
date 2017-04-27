@@ -91,6 +91,11 @@ urlpatterns += [
     # API interfaces
 ]
 
+# catalog
+urlpatterns += [
+    url(r'^catalog/', include('catalog.urls')),
+]
+
 # redirect root to swagger UI
 urlpatterns += [
     # redirect root to swagger UI

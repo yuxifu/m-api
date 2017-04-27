@@ -52,9 +52,12 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'rest_framework_docs',
     'corsheaders',
+    'localflavor',
     'snippets.apps.SnippetsConfig',
     'experiments.apps.ExperimentsConfig',
     'apiAdmin.apps.ApiAdminConfig',
+    'catalog.apps.CatalogConfig',
+    'mattress.apps.MattressConfig'
 ]
 
 INSTALLED_APPS += (
