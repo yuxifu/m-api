@@ -44,6 +44,7 @@ pep8==1.7.0
 pep8-naming==0.4.1
 prospector==0.12.4
 psycopg2==2.6.2
+py==1.4.33
 pycodestyle==2.0.0
 pydocstyle==1.0.0
 pyflakes==1.5.0
@@ -56,11 +57,13 @@ pylint-django==0.7.2
 pylint-flask==0.5
 pylint-plugin-utils==0.2.4
 pyparsing==2.2.0
+pytest==3.0.7
 python-dateutil==2.6.0
 python-dotenv==0.6.3
 python-http-client==2.2.1
 python3-openid==3.0.10
 PyYAML==3.12
+redis==2.10.5
 requests==2.9.1
 requests-oauthlib==0.8.0
 requirements-detector==0.5.2

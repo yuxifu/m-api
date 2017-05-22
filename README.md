@@ -9,6 +9,7 @@ Here is a [Live Demo](https://yuxi-m-api.herokuapp.com/) deployed at [heroku](ht
 - Base on [django-allauth](https://github.com/pennersr/django-allauth)
 - Based on [Django REST framework official tutorial](http://www.django-rest-framework.org/tutorial/quickstart/).
 - Based on - Heroku [python-getting-started](https://github.com/heroku/python-getting-started).
+- [Building Twelve Factor Apps on Heroku](https://blog.heroku.com/twelve-factor-apps)
 - Production-ready configuration for Static Files, Database Settings, Gunicorn, etc.
 - Enhancements to Django's static file serving functionality via WhiteNoise.
 - Latest Python 3.6 runtime environment. 
@@ -47,3 +48,4 @@ Run `pip freeze > requirements.txt`
 ## Heroku Deployment
 - [Configuring Django Apps for Heroku](https://devcenter.heroku.com/articles/django-app-configuration)
 - [Deploying Python and Django Apps on Heroku](https://devcenter.heroku.com/articles/deploying-python)
+

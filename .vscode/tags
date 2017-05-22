@@ -4,48 +4,72 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+0001_initial.py	../catalog/migrations/0001_initial.py	1;"	kind:file	line:1
 0001_initial.py	../experiments/migrations/0001_initial.py	1;"	kind:file	line:1
+0001_initial.py	../mattress/migrations/0001_initial.py	1;"	kind:file	line:1
 0001_initial.py	../snippets/migrations/0001_initial.py	1;"	kind:file	line:1
 0002_auto_20170208_2231.py	../snippets/migrations/0002_auto_20170208_2231.py	1;"	kind:file	line:1
 0003_auto_20170208_2246.py	../snippets/migrations/0003_auto_20170208_2246.py	1;"	kind:file	line:1
 0004_auto_20170209_1715.py	../snippets/migrations/0004_auto_20170209_1715.py	1;"	kind:file	line:1
 0005_auto_20170403_2143.py	../snippets/migrations/0005_auto_20170403_2143.py	1;"	kind:file	line:1
-ACCOUNT_AUTHENTICATION_METHOD	../_main/settings.py	/^ACCOUNT_AUTHENTICATION_METHOD = 'username_email'$/;"	kind:variable	line:268
-ACCOUNT_EMAIL_REQUIRED	../_main/settings.py	/^ACCOUNT_EMAIL_REQUIRED = True   # must be True if 'email' authentication is used$/;"	kind:variable	line:271
-ACCOUNT_EMAIL_VERIFICATION	../_main/settings.py	/^ACCOUNT_EMAIL_VERIFICATION = 'optional'  # 'mandatory'$/;"	kind:variable	line:269
-ACCOUNT_UNIQUE_EMAIL	../_main/settings.py	/^ACCOUNT_UNIQUE_EMAIL = True$/;"	kind:variable	line:270
-ACCOUNT_USERNAME_REQUIRED	../_main/settings.py	/^ACCOUNT_USERNAME_REQUIRED = True$/;"	kind:variable	line:272
-ALLOWED_HOSTS	../_main/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	kind:variable	line:188
+ACCOUNT_AUTHENTICATION_METHOD	../_main/settings.py	/^ACCOUNT_AUTHENTICATION_METHOD = 'username_email'$/;"	kind:variable	line:271
+ACCOUNT_EMAIL_REQUIRED	../_main/settings.py	/^ACCOUNT_EMAIL_REQUIRED = True   # must be True if 'email' authentication is used$/;"	kind:variable	line:274
+ACCOUNT_EMAIL_VERIFICATION	../_main/settings.py	/^ACCOUNT_EMAIL_VERIFICATION = 'optional'  # 'mandatory'$/;"	kind:variable	line:272
+ACCOUNT_UNIQUE_EMAIL	../_main/settings.py	/^ACCOUNT_UNIQUE_EMAIL = True$/;"	kind:variable	line:273
+ACCOUNT_USERNAME_REQUIRED	../_main/settings.py	/^ACCOUNT_USERNAME_REQUIRED = True$/;"	kind:variable	line:275
+ALLOWED_HOSTS	../_main/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	kind:variable	line:191
 APIView	../_main/swagger.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:7
 APIView	../snippets/views2.py	/^from rest_framework.views import APIView$/;"	kind:namespace	line:9
-API_NAME	../_main/settings.py	/^API_NAME = os.environ.get('API_NAME', 'My Web API')$/;"	kind:variable	line:246
-AUTHENTICATION_BACKENDS	../_main/settings.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:75
-AUTH_PASSWORD_VALIDATORS	../_main/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:149
+API_NAME	../_main/settings.py	/^API_NAME = os.environ.get('API_NAME', 'My Web API')$/;"	kind:variable	line:249
+AUTHENTICATION_BACKENDS	../_main/settings.py	/^AUTHENTICATION_BACKENDS = ($/;"	kind:variable	line:78
+AUTH_PASSWORD_VALIDATORS	../_main/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:152
 AllowAny	../_main/swagger.py	/^from rest_framework.permissions import AllowAny, IsAdminUser$/;"	kind:namespace	line:4
 ApiAdminConfig	../apiAdmin/apps.py	/^class ApiAdminConfig(AppConfig):$/;"	kind:class	line:4
 AppConfig	../apiAdmin/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../catalog/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 AppConfig	../experiments/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+AppConfig	../mattress/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
 AppConfig	../snippets/apps.py	/^from django.apps import AppConfig$/;"	kind:namespace	line:1
+Author	../catalog/admin.py	/^from .models import Author, Genre, Book, BookInstance, Language$/;"	kind:namespace	line:2
+Author	../catalog/models.py	/^class Author(models.Model):$/;"	kind:class	line:122
+AuthorAdmin	../catalog/admin.py	/^class AuthorAdmin(admin.ModelAdmin):$/;"	kind:class	line:16
 BASE_DIR	../_main/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:17
-CORS_ORIGIN_ALLOW_ALL	../_main/settings.py	/^CORS_ORIGIN_ALLOW_ALL = True$/;"	kind:variable	line:96
-DATABASES	../_main/settings.py	/^DATABASES = {$/;"	kind:variable	line:138
+Book	../catalog/admin.py	/^from .models import Author, Genre, Book, BookInstance, Language$/;"	kind:namespace	line:2
+Book	../catalog/models.py	/^class Book(models.Model):$/;"	kind:class	line:43
+BookAdmin	../catalog/admin.py	/^class BookAdmin(admin.ModelAdmin):$/;"	kind:class	line:28
+BookInline	../catalog/admin.py	/^class BookInline(admin.TabularInline):$/;"	kind:class	line:11
+BookInstance	../catalog/admin.py	/^from .models import Author, Genre, Book, BookInstance, Language$/;"	kind:namespace	line:2
+BookInstance	../catalog/models.py	/^class BookInstance(models.Model):$/;"	kind:class	line:83
+BookInstanceAdmin	../catalog/admin.py	/^class BookInstanceAdmin(admin.ModelAdmin):$/;"	kind:class	line:36
+BooksInstanceInline	../catalog/admin.py	/^class BooksInstanceInline(admin.TabularInline):$/;"	kind:class	line:23
+Buyer	../mattress/admin.py	/^from .models import OnlineRetailer, UsAddress, Buyer, RMA, Return$/;"	kind:namespace	line:2
+Buyer	../mattress/models.py	/^class Buyer(models.Model):$/;"	kind:class	line:49
+BuyerAdmin	../mattress/admin.py	/^class BuyerAdmin(admin.ModelAdmin):$/;"	kind:class	line:36
+BuyerInline	../mattress/admin.py	/^class BuyerInline(admin.TabularInline):$/;"	kind:class	line:20
+CAL_KING	../mattress/models.py	/^    CAL_KING = 'CAL_KING'$/;"	kind:variable	line:71
+CORS_ORIGIN_ALLOW_ALL	../_main/settings.py	/^CORS_ORIGIN_ALLOW_ALL = True$/;"	kind:variable	line:99
+CatalogConfig	../catalog/apps.py	/^class CatalogConfig(AppConfig):$/;"	kind:class	line:4
+DATABASES	../_main/settings.py	/^DATABASES = {$/;"	kind:variable	line:141
 DEBUG	../_main/settings.py	/^DEBUG = os.environ.get('DEBUG', 'False') == 'True'$/;"	kind:variable	line:31
-DEFAULT_FROM_EMAIL	../_main/settings.py	/^    DEFAULT_FROM_EMAIL = EMAIL_HOST_USER$/;"	kind:variable	line:256
+DEFAULT_FROM_EMAIL	../_main/settings.py	/^    DEFAULT_FROM_EMAIL = EMAIL_HOST_USER$/;"	kind:variable	line:259
 DefaultRouter	../apiAdmin/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:2
 DefaultRouter	../experiments/urls.py	/^from rest_framework.routers import DefaultRouter, SimpleRouter$/;"	kind:namespace	line:3
 DjangoWhiteNoise	../_main/wsgi.py	/^from whitenoise.django import DjangoWhiteNoise$/;"	kind:namespace	line:13
-EMAIL_BACKEND	../_main/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'$/;"	kind:variable	line:249
-EMAIL_HOST	../_main/settings.py	/^    EMAIL_HOST = os.environ['EMAIL_HOST']$/;"	kind:variable	line:251
-EMAIL_HOST_PASSWORD	../_main/settings.py	/^    EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']$/;"	kind:variable	line:255
-EMAIL_HOST_USER	../_main/settings.py	/^    EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']$/;"	kind:variable	line:254
-EMAIL_PORT	../_main/settings.py	/^    EMAIL_PORT = os.environ['EMAIL_PORT']$/;"	kind:variable	line:252
-EMAIL_USE_TLS	../_main/settings.py	/^    EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', False) == 'True'$/;"	kind:variable	line:253
+EMAIL_BACKEND	../_main/settings.py	/^EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'$/;"	kind:variable	line:252
+EMAIL_HOST	../_main/settings.py	/^    EMAIL_HOST = os.environ['EMAIL_HOST']$/;"	kind:variable	line:254
+EMAIL_HOST_PASSWORD	../_main/settings.py	/^    EMAIL_HOST_PASSWORD = os.environ['EMAIL_HOST_PASSWORD']$/;"	kind:variable	line:258
+EMAIL_HOST_USER	../_main/settings.py	/^    EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']$/;"	kind:variable	line:257
+EMAIL_PORT	../_main/settings.py	/^    EMAIL_PORT = os.environ['EMAIL_PORT']$/;"	kind:variable	line:255
+EMAIL_USE_TLS	../_main/settings.py	/^    EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', False) == 'True'$/;"	kind:variable	line:256
 EverybodyCanAuthentication	../security/permissions.py	/^class EverybodyCanAuthentication(SessionAuthentication):$/;"	kind:class	line:46
 ExperimentsConfig	../experiments/apps.py	/^class ExperimentsConfig(AppConfig):$/;"	kind:class	line:4
+FULL	../mattress/models.py	/^    FULL = 'FULL'$/;"	kind:variable	line:68
 FacebookLogin	../_main/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 FacebookLogin	../apiAdmin/views_social.py	/^class FacebookLogin(SocialLoginView):$/;"	kind:class	line:18
 FacebookOAuth2Adapter	../apiAdmin/views_social.py	/^from allauth.socialaccount.providers.facebook.views import FacebookOAuth2Adapter$/;"	kind:namespace	line:5
 FileWrapper	../experiments/views_file.py	/^from wsgiref.util import FileWrapper$/;"	kind:namespace	line:8
+Genre	../catalog/admin.py	/^from .models import Author, Genre, Book, BookInstance, Language$/;"	kind:namespace	line:2
+Genre	../catalog/models.py	/^class Genre(models.Model):$/;"	kind:class	line:15
 GoogleLogin	../_main/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 GoogleLogin	../apiAdmin/views_social.py	/^class GoogleLogin(SocialLoginView):$/;"	kind:class	line:14
 GoogleOAuth2Adapter	../apiAdmin/views_social.py	/^from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter$/;"	kind:namespace	line:7
@@ -79,56 +103,79 @@ IsSuperUserOrAuthenticated	../apiAdmin/views.py	/^from security.permissions impo
 IsSuperUserOrAuthenticated	../security/permissions.py	/^class IsSuperUserOrAuthenticated(permissions.BasePermission):$/;"	kind:class	line:21
 JSONRenderer	../snippets/views0.py	/^from rest_framework.renderers import JSONRenderer$/;"	kind:namespace	line:7
 JSONResponse	../snippets/views0.py	/^class JSONResponse(HttpResponse):$/;"	kind:class	line:15
+KING	../mattress/models.py	/^    KING = 'KING'$/;"	kind:variable	line:70
 LANGUAGE_CHOICES	../snippets/models.py	/^LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])$/;"	kind:variable	line:12
 LANGUAGE_CHOICES	../snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
-LANGUAGE_CODE	../_main/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:168
+LANGUAGE_CODE	../_main/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:171
 LEXERS	../snippets/models.py	/^LEXERS = [item for item in get_all_lexers() if item[1]]$/;"	kind:variable	line:11
-LOGIN_REDIRECT_URL	../_main/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:273
+LOAN_STATUS	../catalog/models.py	/^    LOAN_STATUS = ($/;"	kind:variable	line:101
+LOGIN_REDIRECT_URL	../_main/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	kind:variable	line:276
+Language	../catalog/admin.py	/^from .models import Author, Genre, Book, BookInstance, Language$/;"	kind:namespace	line:2
+Language	../catalog/models.py	/^class Language(models.Model):$/;"	kind:class	line:29
 LoginView	../apiAdmin/views.py	/^from rest_auth.registration.views import LoginView$/;"	kind:namespace	line:12
 LoginView	../apiAdmin/views_social.py	/^from rest_auth.views import LoginView$/;"	kind:namespace	line:10
 LoginViewCustom	../_main/urls.py	/^from apiAdmin.views import LoginViewCustom$/;"	kind:namespace	line:27
 LoginViewCustom	../apiAdmin/views.py	/^class LoginViewCustom(LoginView):$/;"	kind:class	line:74
-MIDDLEWARE	../_main/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:83
+MATTRESS_SIZES	../mattress/models.py	/^    MATTRESS_SIZES = ($/;"	kind:variable	line:72
+MIDDLEWARE	../_main/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:86
+MattressConfig	../mattress/apps.py	/^class MattressConfig(AppConfig):$/;"	kind:class	line:4
+MattressSize	../mattress/models.py	/^class MattressSize:$/;"	kind:class	line:65
 Meta	../apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:10
 Meta	../apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:17
 Meta	../apiAdmin/serializers.py	/^    class Meta:$/;"	kind:class	line:24
+Meta	../catalog/models.py	/^    class Meta:$/;"	kind:class	line:111
 Meta	../experiments/models.py	/^    class Meta:$/;"	kind:class	line:18
 Meta	../experiments/serializers.py	/^    class Meta:$/;"	kind:class	line:11
 Meta	../snippets/models.py	/^    class Meta:$/;"	kind:class	line:43
 Meta	../snippets/serializers.py	/^    class Meta:$/;"	kind:class	line:14
 Meta	../snippets/serializers.py	/^    class Meta:$/;"	kind:class	line:54
+Migration	../catalog/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:11
 Migration	../experiments/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
+Migration	../mattress/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:12
 Migration	../snippets/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../snippets/migrations/0002_auto_20170208_2231.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../snippets/migrations/0003_auto_20170208_2246.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 Migration	../snippets/migrations/0004_auto_20170209_1715.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:10
 Migration	../snippets/migrations/0005_auto_20170403_2143.py	/^class Migration(migrations.Migration):$/;"	kind:class	line:8
 OAuth2Client	../apiAdmin/views_social.py	/^from allauth.socialaccount.providers.oauth2.client import OAuth2Client$/;"	kind:namespace	line:8
+OnlineRetailer	../mattress/admin.py	/^from .models import OnlineRetailer, UsAddress, Buyer, RMA, Return$/;"	kind:namespace	line:2
+OnlineRetailer	../mattress/models.py	/^class OnlineRetailer(models.Model):$/;"	kind:class	line:12
+OnlineRetailerAdmin	../mattress/admin.py	/^class OnlineRetailerAdmin(admin.ModelAdmin):$/;"	kind:class	line:25
 PROJECT_ROOT	../_main/settings.py	/^PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))$/;"	kind:variable	line:18
-REST_FRAMEWORK	../_main/settings.py	/^REST_FRAMEWORK = {$/;"	kind:variable	line:232
-REST_SESSION_LOGIN	../_main/settings.py	/^REST_SESSION_LOGIN = False$/;"	kind:variable	line:265
-REST_USE_JWT	../_main/settings.py	/^REST_USE_JWT = False$/;"	kind:variable	line:264
-ROOT_URLCONF	../_main/settings.py	/^ROOT_URLCONF = '_main.urls'$/;"	kind:variable	line:98
+PhoneNumberField	../mattress/models.py	/^from localflavor.us.models import PhoneNumberField$/;"	kind:namespace	line:5
+QUEEN	../mattress/models.py	/^    QUEEN = 'QUEEN'$/;"	kind:variable	line:69
+REST_FRAMEWORK	../_main/settings.py	/^REST_FRAMEWORK = {$/;"	kind:variable	line:235
+REST_SESSION_LOGIN	../_main/settings.py	/^REST_SESSION_LOGIN = False$/;"	kind:variable	line:268
+REST_USE_JWT	../_main/settings.py	/^REST_USE_JWT = False$/;"	kind:variable	line:267
+RMA	../mattress/admin.py	/^from .models import OnlineRetailer, UsAddress, Buyer, RMA, Return$/;"	kind:namespace	line:2
+RMA	../mattress/models.py	/^class RMA(models.Model):$/;"	kind:class	line:82
+RMAAdmin	../mattress/admin.py	/^class RMAAdmin(admin.ModelAdmin):$/;"	kind:class	line:43
+RMAInline	../mattress/admin.py	/^class RMAInline(admin.TabularInline):$/;"	kind:class	line:16
+ROOT_URLCONF	../_main/settings.py	/^ROOT_URLCONF = '_main.urls'$/;"	kind:variable	line:101
 RedirectView	../_main/urls.py	/^from django.views.generic import RedirectView$/;"	kind:namespace	line:20
 RedirectView	../apiAdmin/urls.py	/^from django.views.generic import RedirectView$/;"	kind:namespace	line:3
+Required	../catalog/models.py	/^import uuid  # Required for unique book instances$/;"	kind:namespace	line:8
 Response	../_main/swagger.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:5
 Response	../apiAdmin/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
 Response	../snippets/views.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:9
 Response	../snippets/views1.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
 Response	../snippets/views2.py	/^from rest_framework.response import Response$/;"	kind:namespace	line:8
+Return	../mattress/admin.py	/^from .models import OnlineRetailer, UsAddress, Buyer, RMA, Return$/;"	kind:namespace	line:2
+Return	../mattress/models.py	/^class Return(models.Model):$/;"	kind:class	line:112
+ReturnAdmin	../mattress/admin.py	/^class ReturnAdmin(admin.ModelAdmin):$/;"	kind:class	line:52
 SECRET_KEY	../_main/settings.py	/^    SECRET_KEY = os.environ['SECRET_KEY']$/;"	kind:variable	line:26
-SECURE_PROXY_SSL_HEADER	../_main/settings.py	/^SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')$/;"	kind:variable	line:185
-SITE_ID	../_main/settings.py	/^SITE_ID = 1$/;"	kind:variable	line:262
-SOCIALACCOUNT_EMAIL_REQUIRED	../_main/settings.py	/^SOCIALACCOUNT_EMAIL_REQUIRED = True$/;"	kind:variable	line:276
-SOCIALACCOUNT_EMAIL_VERIFICATION	../_main/settings.py	/^SOCIALACCOUNT_EMAIL_VERIFICATION = "none"$/;"	kind:variable	line:275
-SOCIALACCOUNT_QUERY_EMAIL	../_main/settings.py	/^SOCIALACCOUNT_QUERY_EMAIL = True$/;"	kind:variable	line:277
-STATICFILES_DIRS	../_main/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:197
-STATICFILES_STORAGE	../_main/settings.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:204
-STATIC_ROOT	../_main/settings.py	/^STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')$/;"	kind:variable	line:193
-STATIC_URL	../_main/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:194
+SECURE_PROXY_SSL_HEADER	../_main/settings.py	/^SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')$/;"	kind:variable	line:188
+SITE_ID	../_main/settings.py	/^SITE_ID = 1$/;"	kind:variable	line:265
+SOCIALACCOUNT_EMAIL_REQUIRED	../_main/settings.py	/^SOCIALACCOUNT_EMAIL_REQUIRED = True$/;"	kind:variable	line:279
+SOCIALACCOUNT_EMAIL_VERIFICATION	../_main/settings.py	/^SOCIALACCOUNT_EMAIL_VERIFICATION = "none"$/;"	kind:variable	line:278
+SOCIALACCOUNT_QUERY_EMAIL	../_main/settings.py	/^SOCIALACCOUNT_QUERY_EMAIL = True$/;"	kind:variable	line:280
+STATICFILES_DIRS	../_main/settings.py	/^STATICFILES_DIRS = ($/;"	kind:variable	line:200
+STATICFILES_STORAGE	../_main/settings.py	/^STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'$/;"	kind:variable	line:207
+STATIC_ROOT	../_main/settings.py	/^STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')$/;"	kind:variable	line:196
+STATIC_URL	../_main/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:197
 STYLE_CHOICES	../snippets/models.py	/^STYLE_CHOICES = sorted((item, item) for item in get_all_styles())$/;"	kind:variable	line:13
 STYLE_CHOICES	../snippets/serializers.py	/^from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES$/;"	kind:namespace	line:5
-SWAGGER_SETTINGS	../_main/settings.py	/^SWAGGER_SETTINGS = {$/;"	kind:variable	line:207
+SWAGGER_SETTINGS	../_main/settings.py	/^SWAGGER_SETTINGS = {$/;"	kind:variable	line:210
 SchemaGenerator	../_main/swagger.py	/^from rest_framework.schemas import SchemaGenerator$/;"	kind:namespace	line:6
 SendSimpleEmailMessssage	../experiments/views.py	/^                               generics.GenericAPIView):$/;"	kind:class	line:13
 SessionAuthentication	../security/permissions.py	/^from rest_framework.authentication import SessionAuthentication$/;"	kind:namespace	line:3
@@ -167,19 +214,30 @@ SnippetsConfig	../snippets/apps.py	/^class SnippetsConfig(AppConfig):$/;"	kind:c
 SocialLoginView	../apiAdmin/views_social.py	/^from rest_auth.registration.views import SocialLoginView$/;"	kind:namespace	line:9
 StreamingHttpResponse	../experiments/views_file.py	/^from django.http import Http404, HttpResponse, StreamingHttpResponse$/;"	kind:namespace	line:6
 SwaggerSchemaView	../_main/swagger.py	/^class SwaggerSchemaView(APIView):$/;"	kind:class	line:11
-TEMPLATES	../_main/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:100
-TIME_ZONE	../_main/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:170
+TEMPLATES	../_main/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:103
+TIME_ZONE	../_main/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:173
+TWIN	../mattress/models.py	/^    TWIN = 'TWIN'$/;"	kind:variable	line:66
+TWIN_XL	../mattress/models.py	/^    TWIN_XL = 'TWIN_XL'$/;"	kind:variable	line:67
 TestCase	../apiAdmin/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../catalog/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TestCase	../experiments/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
+TestCase	../mattress/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TestCase	../snippets/tests.py	/^from django.test import TestCase$/;"	kind:namespace	line:1
 TokenAuthentication	../apiAdmin/views.py	/^from rest_framework.authentication import TokenAuthentication$/;"	kind:namespace	line:11
 TwitterLogin	../_main/urls.py	/^from apiAdmin.views_social import GoogleLogin, FacebookLogin  # , TwitterLogin$/;"	kind:namespace	line:26
 TwitterLoginSerializer	../apiAdmin/views_social.py	/^from rest_auth.social_serializers import TwitterLoginSerializer$/;"	kind:namespace	line:11
-USE_I18N	../_main/settings.py	/^USE_I18N = True$/;"	kind:variable	line:172
-USE_L10N	../_main/settings.py	/^USE_L10N = True$/;"	kind:variable	line:174
-USE_TZ	../_main/settings.py	/^USE_TZ = True$/;"	kind:variable	line:176
+USE_I18N	../_main/settings.py	/^USE_I18N = True$/;"	kind:variable	line:175
+USE_L10N	../_main/settings.py	/^USE_L10N = True$/;"	kind:variable	line:177
+USE_TZ	../_main/settings.py	/^USE_TZ = True$/;"	kind:variable	line:179
+USStateField	../mattress/models.py	/^from localflavor.us.models import USStateField$/;"	kind:namespace	line:6
+USZipCodeField	../mattress/models.py	/^from localflavor.us.models import USZipCodeField$/;"	kind:namespace	line:7
+UsAddress	../mattress/admin.py	/^from .models import OnlineRetailer, UsAddress, Buyer, RMA, Return$/;"	kind:namespace	line:2
+UsAddress	../mattress/models.py	/^class UsAddress(models.Model):$/;"	kind:class	line:32
+UsAddressAdmin	../mattress/admin.py	/^class UsAddressAdmin(admin.ModelAdmin):$/;"	kind:class	line:31
 User	../apiAdmin/serializers.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:5
 User	../apiAdmin/views.py	/^from django.contrib.auth.models import User, Group$/;"	kind:namespace	line:4
+User	../catalog/models.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:12
+User	../mattress/models.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:3
 User	../snippets/serializers.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:6
 User	../snippets/views.py	/^from django.contrib.auth.models import User$/;"	kind:namespace	line:13
 UserDetail	../snippets/views.py	/^class UserDetail(generics.RetrieveAPIView):$/;"	kind:class	line:48
@@ -192,26 +250,47 @@ UserSerializer	../apiAdmin/views.py	/^from apiAdmin.serializers import UserRegis
 UserSerializer	../snippets/serializers.py	/^class UserSerializer(serializers.HyperlinkedModelSerializer):$/;"	kind:class	line:49
 UserSerializer	../snippets/views.py	/^from snippets.serializers import UserSerializer$/;"	kind:namespace	line:17
 UserViewSet	../apiAdmin/views.py	/^class UserViewSet(viewsets.ModelViewSet):$/;"	kind:class	line:55
-WSGI_APPLICATION	../_main/settings.py	/^WSGI_APPLICATION = '_main.wsgi.application'$/;"	kind:variable	line:116
+WSGI_APPLICATION	../_main/settings.py	/^WSGI_APPLICATION = '_main.wsgi.application'$/;"	kind:variable	line:119
 __init__	../experiments/models.py	/^    def __init__(self, subject, message, from_addr, to_addrs):$/;"	kind:member	line:12
 __init__	../snippets/views0.py	/^    def __init__(self, data, **kwargs):$/;"	kind:member	line:20
 __init__.py	../_main/__init__.py	1;"	kind:file	line:1
 __init__.py	../apiAdmin/__init__.py	1;"	kind:file	line:1
 __init__.py	../apiAdmin/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../catalog/__init__.py	1;"	kind:file	line:1
+__init__.py	../catalog/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../experiments/__init__.py	1;"	kind:file	line:1
 __init__.py	../experiments/migrations/__init__.py	1;"	kind:file	line:1
+__init__.py	../mattress/__init__.py	1;"	kind:file	line:1
+__init__.py	../mattress/migrations/__init__.py	1;"	kind:file	line:1
 __init__.py	../security/__init__.py	1;"	kind:file	line:1
 __init__.py	../snippets/__init__.py	1;"	kind:file	line:1
 __init__.py	../snippets/migrations/__init__.py	1;"	kind:file	line:1
+__str__	../catalog/models.py	/^    def __str__(self):$/;"	kind:member	line:115
+__str__	../catalog/models.py	/^    def __str__(self):$/;"	kind:member	line:137
+__str__	../catalog/models.py	/^    def __str__(self):$/;"	kind:member	line:22
+__str__	../catalog/models.py	/^    def __str__(self):$/;"	kind:member	line:36
+__str__	../catalog/models.py	/^    def __str__(self):$/;"	kind:member	line:76
+__str__	../mattress/models.py	/^    def __str__(self):$/;"	kind:member	line:106
+__str__	../mattress/models.py	/^    def __str__(self):$/;"	kind:member	line:147
+__str__	../mattress/models.py	/^    def __str__(self):$/;"	kind:member	line:25
+__str__	../mattress/models.py	/^    def __str__(self):$/;"	kind:member	line:42
+__str__	../mattress/models.py	/^    def __str__(self):$/;"	kind:member	line:59
 adapter_class	../apiAdmin/views_social.py	/^    adapter_class = FacebookOAuth2Adapter$/;"	kind:variable	line:19
 adapter_class	../apiAdmin/views_social.py	/^    adapter_class = GoogleOAuth2Adapter$/;"	kind:variable	line:15
 add	../experiments/views_calculator.py	/^def add(request, numbers=None):$/;"	kind:function	line:16
+address	../mattress/models.py	/^    address = models.ForeignKey($/;"	kind:variable	line:56
+address_1	../mattress/models.py	/^    address_1 = models.CharField("Address", max_length=128)$/;"	kind:variable	line:36
+address_2	../mattress/models.py	/^    address_2 = models.CharField("Address Cont'd", max_length=128, blank=True)$/;"	kind:variable	line:37
 admin	../_main/urls.py	/^from django.contrib import admin$/;"	kind:namespace	line:17
 admin	../apiAdmin/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../catalog/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	../experiments/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
+admin	../mattress/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin	../snippets/admin.py	/^from django.contrib import admin$/;"	kind:namespace	line:1
 admin.py	../apiAdmin/admin.py	1;"	kind:file	line:1
+admin.py	../catalog/admin.py	1;"	kind:file	line:1
 admin.py	../experiments/admin.py	1;"	kind:file	line:1
+admin.py	../mattress/admin.py	1;"	kind:file	line:1
 admin.py	../snippets/admin.py	1;"	kind:file	line:1
 api_helloworld	../apiAdmin/views.py	/^def api_helloworld(request, format=None):$/;"	kind:function	line:34
 api_helloworld_protected	../apiAdmin/views.py	/^def api_helloworld_protected(request, format=None):$/;"	kind:function	line:41
@@ -224,60 +303,116 @@ api_view	../snippets/views1.py	/^from rest_framework.decorators import api_view,
 application	../_main/wsgi.py	/^application = DjangoWhiteNoise(application)$/;"	kind:variable	line:18
 application	../_main/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:17
 apps.py	../apiAdmin/apps.py	1;"	kind:file	line:1
+apps.py	../catalog/apps.py	1;"	kind:file	line:1
 apps.py	../experiments/apps.py	1;"	kind:file	line:1
+apps.py	../mattress/apps.py	1;"	kind:file	line:1
 apps.py	../snippets/apps.py	1;"	kind:file	line:1
 authenticate	../security/permissions.py	/^    def authenticate(self, request):$/;"	kind:member	line:48
 authentication_classes	../apiAdmin/views.py	/^    authentication_classes = (TokenAuthentication,)$/;"	kind:variable	line:79
+author	../catalog/models.py	/^    author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)$/;"	kind:variable	line:48
+book	../catalog/models.py	/^    book = models.ForeignKey('Book', on_delete=models.SET_NULL, null=True)$/;"	kind:variable	line:89
+book	../catalog/models.py	/^import uuid  # Required for unique book instances$/;"	kind:namespace	line:8
+borrower	../catalog/models.py	/^    borrower = models.ForeignKey($/;"	kind:variable	line:92
+brand	../mattress/models.py	/^    brand = models.CharField(max_length=128)$/;"	kind:variable	line:134
+brand	../mattress/models.py	/^    brand = models.CharField(max_length=128)$/;"	kind:variable	line:93
+buyer	../mattress/models.py	/^    buyer = models.ForeignKey($/;"	kind:variable	line:138
+buyer	../mattress/models.py	/^    buyer = models.ForeignKey($/;"	kind:variable	line:97
+city	../mattress/models.py	/^    city = models.CharField("City", max_length=64)$/;"	kind:variable	line:38
 code	../snippets/models.py	/^    code = models.TextField()$/;"	kind:variable	line:19
+container_back_delivered	../mattress/models.py	/^    container_back_delivered = models.BooleanField(default=False)$/;"	kind:variable	line:124
+container_back_shipped	../mattress/models.py	/^    container_back_shipped = models.BooleanField(default=False)$/;"	kind:variable	line:123
+container_delivered	../mattress/models.py	/^    container_delivered = models.BooleanField(default=False)$/;"	kind:variable	line:120
+container_shipped	../mattress/models.py	/^    container_shipped = models.BooleanField(default=False)$/;"	kind:variable	line:119
 create	../apiAdmin/serializers.py	/^    def create(self, validated_data):$/;"	kind:member	line:30
 create	../experiments/serializers.py	/^    def create(self, validated_data):$/;"	kind:member	line:15
 created	../snippets/models.py	/^    created = models.DateTimeField(auto_now_add=True)$/;"	kind:variable	line:17
 csrf_exempt	../_main/urls.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:19
 csrf_exempt	../snippets/views0.py	/^from django.views.decorators.csrf import csrf_exempt$/;"	kind:namespace	line:6
+date	../catalog/models.py	/^from datetime import date$/;"	kind:namespace	line:9
+date_of_birth	../catalog/models.py	/^    date_of_birth = models.DateField(null=True, blank=True)$/;"	kind:variable	line:128
+date_of_death	../catalog/models.py	/^    date_of_death = models.DateField('died', null=True, blank=True)$/;"	kind:variable	line:129
+datetime	../mattress/migrations/0001_initial.py	/^import datetime$/;"	kind:namespace	line:5
+datetime	../mattress/models.py	/^import datetime$/;"	kind:namespace	line:9
+db	../catalog/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+db	../mattress/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
 db	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
-db_from_env	../_main/settings.py	/^db_from_env = dj_database_url.config(conn_max_age=500)$/;"	kind:variable	line:181
+db_from_env	../_main/settings.py	/^db_from_env = dj_database_url.config(conn_max_age=500)$/;"	kind:variable	line:184
 default	../snippets/models.py	/^                              default=None)$/;"	kind:variable	line:27
 delete	../snippets/views2.py	/^    def delete(self, request, pk, format=None):$/;"	kind:member	line:67
 delete	../snippets/views3.py	/^    def delete(self, request, *args, **kwargs):$/;"	kind:member	line:50
+deletion	../catalog/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+deletion	../mattress/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
 deletion	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+dependencies	../catalog/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:15
 dependencies	../experiments/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
+dependencies	../mattress/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:16
 dependencies	../snippets/migrations/0001_initial.py	/^    dependencies = [$/;"	kind:variable	line:12
 dependencies	../snippets/migrations/0002_auto_20170208_2231.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../snippets/migrations/0003_auto_20170208_2246.py	/^    dependencies = [$/;"	kind:variable	line:10
 dependencies	../snippets/migrations/0004_auto_20170209_1715.py	/^    dependencies = [$/;"	kind:variable	line:12
 dependencies	../snippets/migrations/0005_auto_20170403_2143.py	/^    dependencies = [$/;"	kind:variable	line:10
+description	../mattress/models.py	/^    description = models.TextField($/;"	kind:variable	line:20
 dirname	../manage.py	/^from os.path import join, dirname$/;"	kind:namespace	line:5
+display_genre	../catalog/models.py	/^    def display_genre(self):$/;"	kind:member	line:63
 dj_database_url	../_main/settings.py	/^import dj_database_url$/;"	kind:namespace	line:14
+django	../catalog/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
 django	../manage.py	/^            import django$/;"	kind:namespace	line:17
+django	../mattress/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
 django	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
 dotenv_path	../manage.py	/^    dotenv_path = join(dirname(__file__), '.env')$/;"	kind:variable	line:28
+due_back	../catalog/models.py	/^    due_back = models.DateField(null=True, blank=True)$/;"	kind:variable	line:91
+email	../mattress/models.py	/^    email = models.EmailField()$/;"	kind:variable	line:22
+email	../mattress/models.py	/^    email = models.EmailField()$/;"	kind:variable	line:54
 execute_from_command_line	../manage.py	/^        from django.core.management import execute_from_command_line$/;"	kind:namespace	line:11
 extra_kwargs	../apiAdmin/serializers.py	/^        extra_kwargs = {'password': {'write_only': True}}$/;"	kind:variable	line:28
+field	../catalog/migrations/0001_initial.py	/^            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='catalog.Language'),$/;"	kind:variable	line:77
+field	../catalog/migrations/0001_initial.py	/^            field=models.ManyToManyField(help_text='Select a genre for this book', to='catalog.Genre'),$/;"	kind:variable	line:72
+field	../mattress/migrations/0001_initial.py	/^            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='mattress.UsAddress'),$/;"	kind:variable	line:97
 field	../snippets/migrations/0004_auto_20170209_1715.py	/^            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='snippets', to=settings.AUTH_USER_MODEL),$/;"	kind:variable	line:26
 field	../snippets/migrations/0004_auto_20170209_1715.py	/^            field=models.TextField(blank=True, default=None, null=True),$/;"	kind:variable	line:21
 field	../snippets/migrations/0005_auto_20170403_2143.py	/^            field=models.CharField(choices=[('abap', 'ABAP'), ('abnf', 'ABNF'), ('ada', 'Ada'), ('adl', 'ADL'), ('agda', 'Agda'), ('aheui', 'Aheui'), ('ahk', 'autohotkey'), ('alloy', 'Alloy'), ('ampl', 'Ampl'), ('antlr', 'ANTLR'), ('antlr-as', 'ANTLR With ActionScript Target'), ('antlr-cpp', 'ANTLR With CPP Target'), ('antlr-csharp', 'ANTLR With C# Target'), ('antlr-java', 'ANTLR With Java Target'), ('antlr-objc', 'ANTLR With ObjectiveC Target'), ('antlr-perl', 'ANTLR With Perl Target'), ('antlr-python', 'ANTLR With Python Target'), ('antlr-ruby', 'ANTLR With Ruby Target'), ('apacheconf', 'ApacheConf'), ('apl', 'APL'), ('applescript', 'AppleScript'), ('arduino', 'Arduino'), ('as', 'ActionScript'), ('as3', 'ActionScript 3'), ('aspectj', 'AspectJ'), ('aspx-cs', 'aspx-cs'), ('aspx-vb', 'aspx-vb'), ('asy', 'Asymptote'), ('at', 'AmbientTalk'), ('autoit', 'AutoIt'), ('awk', 'Awk'), ('basemake', 'Base Makefile'), ('bash', 'Bash'), ('bat', 'Batchfile'), ('bbcode', 'BBCode'), ('bc', 'BC'), ('befunge', 'Befunge'), ('bib', 'BibTeX'), ('blitzbasic', 'BlitzBasic'), ('blitzmax', 'BlitzMax'), ('bnf', 'BNF'), ('boo', 'Boo'), ('boogie', 'Boogie'), ('brainfuck', 'Brainfuck'), ('bro', 'Bro'), ('bst', 'BST'), ('bugs', 'BUGS'), ('c', 'C'), ('c-objdump', 'c-objdump'), ('ca65', 'ca65 assembler'), ('cadl', 'cADL'), ('camkes', 'CAmkES'), ('capdl', 'CapDL'), ('capnp', "Cap'n Proto"), ('cbmbas', 'CBM BASIC V2'), ('ceylon', 'Ceylon'), ('cfc', 'Coldfusion CFC'), ('cfengine3', 'CFEngine3'), ('cfm', 'Coldfusion HTML'), ('cfs', 'cfstatement'), ('chai', 'ChaiScript'), ('chapel', 'Chapel'), ('cheetah', 'Cheetah'), ('cirru', 'Cirru'), ('clay', 'Clay'), ('clean', 'Clean'), ('clojure', 'Clojure'), ('clojurescript', 'ClojureScript'), ('cmake', 'CMake'), ('cobol', 'COBOL'), ('cobolfree', 'COBOLFree'), ('coffee-script', 'CoffeeScript'), ('common-lisp', 'Common Lisp'), ('componentpascal', 'Component Pascal'), ('console', 'Bash Session'), ('control', 'Debian Control file'), ('coq', 'Coq'), ('cpp', 'C++'), ('cpp-objdump', 'cpp-objdump'), ('cpsa', 'CPSA'), ('cr', 'Crystal'), ('crmsh', 'Crmsh'), ('croc', 'Croc'), ('cryptol', 'Cryptol'), ('csharp', 'C#'), ('csound', 'Csound Orchestra'), ('csound-document', 'Csound Document'), ('csound-score', 'Csound Score'), ('css', 'CSS'), ('css+django', 'CSS+Django\/Jinja'), ('css+erb', 'CSS+Ruby'), ('css+genshitext', 'CSS+Genshi Text'), ('css+lasso', 'CSS+Lasso'), ('css+mako', 'CSS+Mako'), ('css+mako', 'CSS+Mako'), ('css+mozpreproc', 'CSS+mozpreproc'), ('css+myghty', 'CSS+Myghty'), ('css+php', 'CSS+PHP'), ('css+smarty', 'CSS+Smarty'), ('cucumber', 'Gherkin'), ('cuda', 'CUDA'), ('cypher', 'Cypher'), ('cython', 'Cython'), ('d', 'D'), ('d-objdump', 'd-objdump'), ('dart', 'Dart'), ('delphi', 'Delphi'), ('dg', 'dg'), ('diff', 'Diff'), ('django', 'Django\/Jinja'), ('docker', 'Docker'), ('doscon', 'MSDOS Session'), ('dpatch', 'Darcs Patch'), ('dtd', 'DTD'), ('duel', 'Duel'), ('dylan', 'Dylan'), ('dylan-console', 'Dylan session'), ('dylan-lid', 'DylanLID'), ('earl-grey', 'Earl Grey'), ('easytrieve', 'Easytrieve'), ('ebnf', 'EBNF'), ('ec', 'eC'), ('ecl', 'ECL'), ('eiffel', 'Eiffel'), ('elixir', 'Elixir'), ('elm', 'Elm'), ('emacs', 'EmacsLisp'), ('erb', 'ERB'), ('erl', 'Erlang erl session'), ('erlang', 'Erlang'), ('evoque', 'Evoque'), ('extempore', 'xtlang'), ('ezhil', 'Ezhil'), ('factor', 'Factor'), ('fan', 'Fantom'), ('fancy', 'Fancy'), ('felix', 'Felix'), ('fish', 'Fish'), ('flatline', 'Flatline'), ('forth', 'Forth'), ('fortran', 'Fortran'), ('fortranfixed', 'FortranFixed'), ('foxpro', 'FoxPro'), ('fsharp', 'FSharp'), ('gap', 'GAP'), ('gas', 'GAS'), ('genshi', 'Genshi'), ('genshitext', 'Genshi Text'), ('glsl', 'GLSL'), ('gnuplot', 'Gnuplot'), ('go', 'Go'), ('golo', 'Golo'), ('gooddata-cl', 'GoodData-CL'), ('gosu', 'Gosu'), ('groff', 'Groff'), ('groovy', 'Groovy'), ('gst', 'Gosu Template'), ('haml', 'Haml'), ('handlebars', 'Handlebars'), ('haskell', 'Haskell'), ('haxeml', 'Hxml'), ('hexdump', 'Hexdump'), ('hsail', 'HSAIL'), ('html', 'HTML'), ('html+cheetah', 'HTML+Cheetah'), ('html+django', 'HTML+Django\/Jinja'), ('html+evoque', 'HTML+Evoque'), ('html+genshi', 'HTML+Genshi'), ('html+handlebars', 'HTML+Handlebars'), ('html+lasso', 'HTML+Lasso'), ('html+mako', 'HTML+Mako'), ('html+mako', 'HTML+Mako'), ('html+myghty', 'HTML+Myghty'), ('html+ng2', 'HTML + Angular2'), ('html+php', 'HTML+PHP'), ('html+smarty', 'HTML+Smarty'), ('html+twig', 'HTML+Twig'), ('html+velocity', 'HTML+Velocity'), ('http', 'HTTP'), ('hx', 'Haxe'), ('hybris', 'Hybris'), ('hylang', 'Hy'), ('i6t', 'Inform 6 template'), ('idl', 'IDL'), ('idris', 'Idris'), ('iex', 'Elixir iex session'), ('igor', 'Igor'), ('inform6', 'Inform 6'), ('inform7', 'Inform 7'), ('ini', 'INI'), ('io', 'Io'), ('ioke', 'Ioke'), ('irc', 'IRC logs'), ('isabelle', 'Isabelle'), ('j', 'J'), ('jags', 'JAGS'), ('jasmin', 'Jasmin'), ('java', 'Java'), ('javascript+mozpreproc', 'Javascript+mozpreproc'), ('jcl', 'JCL'), ('jlcon', 'Julia console'), ('js', 'JavaScript'), ('js+cheetah', 'JavaScript+Cheetah'), ('js+django', 'JavaScript+Django\/Jinja'), ('js+erb', 'JavaScript+Ruby'), ('js+genshitext', 'JavaScript+Genshi Text'), ('js+lasso', 'JavaScript+Lasso'), ('js+mako', 'JavaScript+Mako'), ('js+mako', 'JavaScript+Mako'), ('js+myghty', 'JavaScript+Myghty'), ('js+php', 'JavaScript+PHP'), ('js+smarty', 'JavaScript+Smarty'), ('jsgf', 'JSGF'), ('json', 'JSON'), ('json-object', 'JSONBareObject'), ('jsonld', 'JSON-LD'), ('jsp', 'Java Server Page'), ('julia', 'Julia'), ('juttle', 'Juttle'), ('kal', 'Kal'), ('kconfig', 'Kconfig'), ('koka', 'Koka'), ('kotlin', 'Kotlin'), ('lagda', 'Literate Agda'), ('lasso', 'Lasso'), ('lcry', 'Literate Cryptol'), ('lean', 'Lean'), ('less', 'LessCss'), ('lhs', 'Literate Haskell'), ('lidr', 'Literate Idris'), ('lighty', 'Lighttpd configuration file'), ('limbo', 'Limbo'), ('liquid', 'liquid'), ('live-script', 'LiveScript'), ('llvm', 'LLVM'), ('logos', 'Logos'), ('logtalk', 'Logtalk'), ('lsl', 'LSL'), ('lua', 'Lua'), ('make', 'Makefile'), ('mako', 'Mako'), ('mako', 'Mako'), ('maql', 'MAQL'), ('mask', 'Mask'), ('mason', 'Mason'), ('mathematica', 'Mathematica'), ('matlab', 'Matlab'), ('matlabsession', 'Matlab session'), ('md', 'markdown'), ('minid', 'MiniD'), ('modelica', 'Modelica'), ('modula2', 'Modula-2'), ('monkey', 'Monkey'), ('monte', 'Monte'), ('moocode', 'MOOCode'), ('moon', 'MoonScript'), ('mozhashpreproc', 'mozhashpreproc'), ('mozpercentpreproc', 'mozpercentpreproc'), ('mql', 'MQL'), ('mscgen', 'Mscgen'), ('mupad', 'MuPAD'), ('mxml', 'MXML'), ('myghty', 'Myghty'), ('mysql', 'MySQL'), ('nasm', 'NASM'), ('ncl', 'NCL'), ('nemerle', 'Nemerle'), ('nesc', 'nesC'), ('newlisp', 'NewLisp'), ('newspeak', 'Newspeak'), ('ng2', 'Angular2'), ('nginx', 'Nginx configuration file'), ('nim', 'Nimrod'), ('nit', 'Nit'), ('nixos', 'Nix'), ('nsis', 'NSIS'), ('numpy', 'NumPy'), ('nusmv', 'NuSMV'), ('objdump', 'objdump'), ('objdump-nasm', 'objdump-nasm'), ('objective-c', 'Objective-C'), ('objective-c++', 'Objective-C++'), ('objective-j', 'Objective-J'), ('ocaml', 'OCaml'), ('octave', 'Octave'), ('odin', 'ODIN'), ('ooc', 'Ooc'), ('opa', 'Opa'), ('openedge', 'OpenEdge ABL'), ('pacmanconf', 'PacmanConf'), ('pan', 'Pan'), ('parasail', 'ParaSail'), ('pawn', 'Pawn'), ('perl', 'Perl'), ('perl6', 'Perl6'), ('php', 'PHP'), ('pig', 'Pig'), ('pike', 'Pike'), ('pkgconfig', 'PkgConfig'), ('plpgsql', 'PL\/pgSQL'), ('postgresql', 'PostgreSQL SQL dialect'), ('postscript', 'PostScript'), ('pot', 'Gettext Catalog'), ('pov', 'POVRay'), ('powershell', 'PowerShell'), ('praat', 'Praat'), ('prolog', 'Prolog'), ('properties', 'Properties'), ('protobuf', 'Protocol Buffer'), ('ps1con', 'PowerShell Session'), ('psql', 'PostgreSQL console (psql)'), ('pug', 'Pug'), ('puppet', 'Puppet'), ('py3tb', 'Python 3.0 Traceback'), ('pycon', 'Python console session'), ('pypylog', 'PyPy Log'), ('pytb', 'Python Traceback'), ('python', 'Python'), ('python3', 'Python 3'), ('qbasic', 'QBasic'), ('qml', 'QML'), ('qvto', 'QVTO'), ('racket', 'Racket'), ('ragel', 'Ragel'), ('ragel-c', 'Ragel in C Host'), ('ragel-cpp', 'Ragel in CPP Host'), ('ragel-d', 'Ragel in D Host'), ('ragel-em', 'Embedded Ragel'), ('ragel-java', 'Ragel in Java Host'), ('ragel-objc', 'Ragel in Objective C Host'), ('ragel-ruby', 'Ragel in Ruby Host'), ('raw', 'Raw token data'), ('rb', 'Ruby'), ('rbcon', 'Ruby irb session'), ('rconsole', 'RConsole'), ('rd', 'Rd'), ('rebol', 'REBOL'), ('red', 'Red'), ('redcode', 'Redcode'), ('registry', 'reg'), ('resource', 'ResourceBundle'), ('rexx', 'Rexx'), ('rhtml', 'RHTML'), ('rnc', 'Relax-NG Compact'), ('roboconf-graph', 'Roboconf Graph'), ('roboconf-instances', 'Roboconf Instances'), ('robotframework', 'RobotFramework'), ('rql', 'RQL'), ('rsl', 'RSL'), ('rst', 'reStructuredText'), ('rts', 'TrafficScript'), ('rust', 'Rust'), ('sas', 'SAS'), ('sass', 'Sass'), ('sc', 'SuperCollider'), ('scala', 'Scala'), ('scaml', 'Scaml'), ('scheme', 'Scheme'), ('scilab', 'Scilab'), ('scss', 'SCSS'), ('shen', 'Shen'), ('silver', 'Silver'), ('slim', 'Slim'), ('smali', 'Smali'), ('smalltalk', 'Smalltalk'), ('smarty', 'Smarty'), ('sml', 'Standard ML'), ('snobol', 'Snobol'), ('snowball', 'Snowball'), ('sourceslist', 'Debian Sourcelist'), ('sp', 'SourcePawn'), ('sparql', 'SPARQL'), ('spec', 'RPMSpec'), ('splus', 'S'), ('sql', 'SQL'), ('sqlite3', 'sqlite3con'), ('squidconf', 'SquidConf'), ('ssp', 'Scalate Server Page'), ('stan', 'Stan'), ('stata', 'Stata'), ('swift', 'Swift'), ('swig', 'SWIG'), ('systemverilog', 'systemverilog'), ('tads3', 'TADS 3'), ('tap', 'TAP'), ('tasm', 'TASM'), ('tcl', 'Tcl'), ('tcsh', 'Tcsh'), ('tcshcon', 'Tcsh Session'), ('tea', 'Tea'), ('termcap', 'Termcap'), ('terminfo', 'Terminfo'), ('terraform', 'Terraform'), ('tex', 'TeX'), ('text', 'Text only'), ('thrift', 'Thrift'), ('todotxt', 'Todotxt'), ('trac-wiki', 'MoinMoin\/Trac Wiki markup'), ('treetop', 'Treetop'), ('ts', 'TypeScript'), ('tsql', 'Transact-SQL'), ('turtle', 'Turtle'), ('twig', 'Twig'), ('typoscript', 'TypoScript'), ('typoscriptcssdata', 'TypoScriptCssData'), ('typoscripthtmldata', 'TypoScriptHtmlData'), ('urbiscript', 'UrbiScript'), ('vala', 'Vala'), ('vb.net', 'VB.net'), ('vcl', 'VCL'), ('vclsnippets', 'VCLSnippets'), ('vctreestatus', 'VCTreeStatus'), ('velocity', 'Velocity'), ('verilog', 'verilog'), ('vgl', 'VGL'), ('vhdl', 'vhdl'), ('vim', 'VimL'), ('wdiff', 'WDiff'), ('whiley', 'Whiley'), ('x10', 'X10'), ('xml', 'XML'), ('xml+cheetah', 'XML+Cheetah'), ('xml+django', 'XML+Django\/Jinja'), ('xml+erb', 'XML+Ruby'), ('xml+evoque', 'XML+Evoque'), ('xml+lasso', 'XML+Lasso'), ('xml+mako', 'XML+Mako'), ('xml+mako', 'XML+Mako'), ('xml+myghty', 'XML+Myghty'), ('xml+php', 'XML+PHP'), ('xml+smarty', 'XML+Smarty'), ('xml+velocity', 'XML+Velocity'), ('xquery', 'XQuery'), ('xslt', 'XSLT'), ('xtend', 'Xtend'), ('xul+mozpreproc', 'XUL+mozpreproc'), ('yaml', 'YAML'), ('yaml+jinja', 'YAML+Jinja'), ('zephir', 'Zephir')], default='python', max_length=100),$/;"	kind:variable	line:18
 fields	../apiAdmin/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:12
 fields	../apiAdmin/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:19
 fields	../apiAdmin/serializers.py	/^        fields = ('username', 'password', 'email', 'first_name', 'last_name')$/;"	kind:variable	line:26
+fields	../catalog/admin.py	/^    fields = ['first_name', 'last_name', ('date_of_birth', 'date_of_death')]$/;"	kind:variable	line:19
+fields	../catalog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:22
+fields	../catalog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:32
+fields	../catalog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:42
+fields	../catalog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:57
+fields	../catalog/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:64
 fields	../experiments/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
 fields	../experiments/serializers.py	/^        fields = '__all__'$/;"	kind:variable	line:13
+fields	../mattress/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:23
+fields	../mattress/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:32
+fields	../mattress/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:43
+fields	../mattress/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:69
+fields	../mattress/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:85
 fields	../snippets/migrations/0001_initial.py	/^            fields=[$/;"	kind:variable	line:18
 fields	../snippets/serializers.py	/^        fields = ('url', 'id', 'highlight', 'owner',$/;"	kind:variable	line:16
 fields	../snippets/serializers.py	/^        fields = ('url', 'id', 'username', 'snippets')$/;"	kind:variable	line:56
+fieldsets	../catalog/admin.py	/^    fieldsets = ($/;"	kind:variable	line:39
+first_name	../catalog/models.py	/^    first_name = models.CharField(max_length=100)$/;"	kind:variable	line:126
+for	../catalog/models.py	/^import uuid  # Required for unique book instances$/;"	kind:namespace	line:8
 format_suffix_patterns	../experiments/urls.py	/^from rest_framework.urlpatterns import format_suffix_patterns$/;"	kind:namespace	line:2
 format_suffix_patterns	../snippets/urls.py	/^from rest_framework.urlpatterns import format_suffix_patterns$/;"	kind:namespace	line:3
 from_addr	../experiments/models.py	/^    from_addr = models.CharField(max_length=256)$/;"	kind:variable	line:9
+full_name	../mattress/models.py	/^    full_name = models.CharField(max_length=128)$/;"	kind:variable	line:53
 generics	../apiAdmin/views.py	/^from rest_framework import permissions, generics$/;"	kind:namespace	line:6
 generics	../experiments/views.py	/^from rest_framework import generics$/;"	kind:namespace	line:4
 generics	../snippets/views.py	/^from rest_framework import generics$/;"	kind:namespace	line:6
 generics	../snippets/views3.py	/^from rest_framework import generics$/;"	kind:namespace	line:7
 generics	../snippets/views4.py	/^from rest_framework import generics$/;"	kind:namespace	line:6
+genre	../catalog/models.py	/^    genre = models.ManyToManyField($/;"	kind:variable	line:56
 get	../_main/swagger.py	/^    def get(self, request):$/;"	kind:member	line:18
 get	../snippets/views.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:61
 get	../snippets/views2.py	/^    def get(self, request, format=None):$/;"	kind:member	line:24
 get	../snippets/views2.py	/^    def get(self, request, pk, format=None):$/;"	kind:member	line:53
 get	../snippets/views3.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:25
 get	../snippets/views3.py	/^    def get(self, request, *args, **kwargs):$/;"	kind:member	line:44
+get_absolute_url	../catalog/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:131
+get_absolute_url	../catalog/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:70
+get_absolute_url	../mattress/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:100
+get_absolute_url	../mattress/models.py	/^    def get_absolute_url(self):$/;"	kind:member	line:141
 get_all_lexers	../snippets/models.py	/^from pygments.lexers import get_all_lexers$/;"	kind:namespace	line:5
 get_all_styles	../snippets/models.py	/^from pygments.styles import get_all_styles$/;"	kind:namespace	line:6
 get_file_http_response	../experiments/views_file.py	/^def get_file_http_response(file, guess_type, attachment):$/;"	kind:function	line:17
@@ -289,25 +424,63 @@ get_wsgi_application	../_main/wsgi.py	/^from django.core.wsgi import get_wsgi_ap
 has_object_permission	../security/permissions.py	/^    def has_object_permission(self, request, view, obj):$/;"	kind:member	line:11
 has_permission	../security/permissions.py	/^    def has_permission(self, request, view):$/;"	kind:member	line:26
 has_permission	../security/permissions.py	/^    def has_permission(self, request, view):$/;"	kind:member	line:40
+help_text	../catalog/models.py	/^                          help_text="Unique ID for this particular book across whole library")$/;"	kind:variable	line:88
+help_text	../mattress/models.py	/^                            help_text="Enter name of the retailer such as Casper")$/;"	kind:variable	line:17
+help_text	../mattress/models.py	/^                            help_text='Mattress size')$/;"	kind:variable	line:137
+help_text	../mattress/models.py	/^                            help_text='Mattress size')$/;"	kind:variable	line:96
+help_text	../mattress/models.py	/^                           help_text="Enter web address of the retailer such as casper.com")$/;"	kind:variable	line:19
 highlight	../snippets/models.py	/^from pygments import highlight$/;"	kind:namespace	line:9
 highlight	../snippets/serializers.py	/^    highlight = serializers.HyperlinkedIdentityField($/;"	kind:variable	line:11
 highlighted	../snippets/models.py	/^    highlighted = models.TextField(null=True, blank=True, default=None)$/;"	kind:variable	line:28
+id	../catalog/models.py	/^    id = models.UUIDField(primary_key=True, default=uuid.uuid4,$/;"	kind:variable	line:87
+imprint	../catalog/models.py	/^    imprint = models.CharField(max_length=200)$/;"	kind:variable	line:90
 include	../_main/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
 include	../apiAdmin/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 include	../experiments/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 include	../snippets/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+initial	../catalog/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:13
 initial	../experiments/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+initial	../mattress/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:14
 initial	../snippets/migrations/0001_initial.py	/^    initial = True$/;"	kind:variable	line:10
+initiate_date	../mattress/models.py	/^    initiate_date = models.DateField(default=datetime.date.today)$/;"	kind:variable	line:118
+inlines	../catalog/admin.py	/^    inlines = [BookInline]$/;"	kind:variable	line:20
+inlines	../catalog/admin.py	/^    inlines = [BooksInstanceInline]$/;"	kind:variable	line:30
+inlines	../mattress/admin.py	/^    inlines = [BuyerInline]$/;"	kind:variable	line:32
+inlines	../mattress/admin.py	/^    inlines = [RMAInline]$/;"	kind:variable	line:27
+inlines	../mattress/admin.py	/^    inlines = [RMAInline]$/;"	kind:variable	line:39
+instances	../catalog/models.py	/^import uuid  # Required for unique book instances$/;"	kind:namespace	line:8
+invoice_number	../mattress/models.py	/^    invoice_number = models.CharField('Invoice#', max_length=128)$/;"	kind:variable	line:131
+invoice_number	../mattress/models.py	/^    invoice_number = models.CharField('Invoice#', max_length=128)$/;"	kind:variable	line:90
 is_authenticated	../security/permissions.py	/^from rest_framework.compat import is_authenticated$/;"	kind:namespace	line:2
+is_overdue	../catalog/models.py	/^    def is_overdue(self):$/;"	kind:member	line:96
+isbn	../catalog/models.py	/^    isbn = models.CharField($/;"	kind:variable	line:54
 join	../manage.py	/^from os.path import join, dirname$/;"	kind:namespace	line:5
 jpeg	../experiments/views_file.py	/^def jpeg(request):$/;"	kind:function	line:46
+kit_back_delivered	../mattress/models.py	/^    kit_back_delivered = models.BooleanField(default=False)$/;"	kind:variable	line:126
+kit_back_shipped	../mattress/models.py	/^    kit_back_shipped = models.BooleanField(default=False)$/;"	kind:variable	line:125
+kit_delivered	../mattress/models.py	/^    kit_delivered = models.BooleanField(default=False)$/;"	kind:variable	line:122
+kit_shipped	../mattress/models.py	/^    kit_shipped = models.BooleanField(default=False)$/;"	kind:variable	line:121
+language	../catalog/models.py	/^    language = models.ForeignKey($/;"	kind:variable	line:60
 language	../snippets/models.py	/^    language = models.CharField($/;"	kind:variable	line:21
+last_name	../catalog/models.py	/^    last_name = models.CharField(max_length=100)$/;"	kind:variable	line:127
 linenos	../snippets/models.py	/^    linenos = models.BooleanField(default=False)$/;"	kind:variable	line:20
+list_display	../catalog/admin.py	/^    list_display = ('book', 'status', 'due_back', 'id')$/;"	kind:variable	line:37
+list_display	../catalog/admin.py	/^    list_display = ('last_name', 'first_name',$/;"	kind:variable	line:17
+list_display	../catalog/admin.py	/^    list_display = ('title', 'author', 'display_genre')$/;"	kind:variable	line:29
+list_display	../mattress/admin.py	/^    list_display = ('full_name', 'email',$/;"	kind:variable	line:37
+list_display	../mattress/admin.py	/^    list_display = ('name', 'web')$/;"	kind:variable	line:26
+list_display	../mattress/admin.py	/^    list_display = ('rma_number', 'retailer',$/;"	kind:variable	line:44
+list_display	../mattress/admin.py	/^    list_display = ('user', 'initiate_date',$/;"	kind:variable	line:53
+list_filter	../catalog/admin.py	/^    list_filter = ('status', 'due_back')$/;"	kind:variable	line:38
+list_filter	../mattress/admin.py	/^    list_filter = ('retailer', 'order_date')$/;"	kind:variable	line:48
 load_dotenv	../manage.py	/^from dotenv import load_dotenv$/;"	kind:namespace	line:6
+localflavor	../mattress/migrations/0001_initial.py	/^import localflavor.us.models$/;"	kind:namespace	line:9
 manage.py	../manage.py	1;"	kind:file	line:1
 managed	../experiments/models.py	/^        managed = False$/;"	kind:variable	line:19
 message	../experiments/models.py	/^    message = models.CharField(max_length=32767)$/;"	kind:variable	line:8
+migrations	../catalog/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
 migrations	../experiments/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
+migrations	../mattress/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:7
 migrations	../snippets/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 migrations	../snippets/migrations/0002_auto_20170208_2231.py	/^from django.db import migrations$/;"	kind:namespace	line:5
 migrations	../snippets/migrations/0003_auto_20170208_2246.py	/^from django.db import migrations$/;"	kind:namespace	line:5
@@ -319,26 +492,62 @@ mixins	../snippets/views3.py	/^from rest_framework import mixins$/;"	kind:namesp
 model	../apiAdmin/serializers.py	/^        model = Group$/;"	kind:variable	line:18
 model	../apiAdmin/serializers.py	/^        model = User$/;"	kind:variable	line:11
 model	../apiAdmin/serializers.py	/^        model = User$/;"	kind:variable	line:25
+model	../catalog/admin.py	/^    model = Book$/;"	kind:variable	line:12
+model	../catalog/admin.py	/^    model = BookInstance$/;"	kind:variable	line:24
 model	../experiments/serializers.py	/^        model = SimpleEmailMessssage$/;"	kind:variable	line:12
+model	../mattress/admin.py	/^    model = Buyer$/;"	kind:variable	line:21
+model	../mattress/admin.py	/^    model = RMA$/;"	kind:variable	line:17
+model	../mattress/models.py	/^    model = models.CharField(max_length=128)$/;"	kind:variable	line:135
+model	../mattress/models.py	/^    model = models.CharField(max_length=128)$/;"	kind:variable	line:94
 model	../snippets/serializers.py	/^        model = Snippet$/;"	kind:variable	line:15
 model	../snippets/serializers.py	/^        model = User$/;"	kind:variable	line:55
+model_name	../catalog/migrations/0001_initial.py	/^            model_name='book',$/;"	kind:variable	line:70
+model_name	../catalog/migrations/0001_initial.py	/^            model_name='book',$/;"	kind:variable	line:75
+model_name	../mattress/migrations/0001_initial.py	/^            model_name='buyer',$/;"	kind:variable	line:95
 model_name	../snippets/migrations/0004_auto_20170209_1715.py	/^            model_name='snippet',$/;"	kind:variable	line:19
 model_name	../snippets/migrations/0004_auto_20170209_1715.py	/^            model_name='snippet',$/;"	kind:variable	line:24
 model_name	../snippets/migrations/0005_auto_20170403_2143.py	/^            model_name='snippet',$/;"	kind:variable	line:16
 models	../apiAdmin/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../catalog/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
+models	../catalog/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
+models	../catalog/models.py	/^from django.db import models$/;"	kind:namespace	line:1
 models	../experiments/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../experiments/models.py	/^from django.db import models$/;"	kind:namespace	line:1
+models	../mattress/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:7
+models	../mattress/migrations/0001_initial.py	/^import django.db.models.deletion$/;"	kind:namespace	line:8
+models	../mattress/migrations/0001_initial.py	/^import localflavor.us.models$/;"	kind:namespace	line:9
+models	../mattress/models.py	/^from django.db import models$/;"	kind:namespace	line:1
 models	../snippets/migrations/0001_initial.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../snippets/migrations/0004_auto_20170209_1715.py	/^from django.db import migrations, models$/;"	kind:namespace	line:6
 models	../snippets/migrations/0004_auto_20170209_1715.py	/^import django.db.models.deletion$/;"	kind:namespace	line:7
 models	../snippets/migrations/0005_auto_20170403_2143.py	/^from django.db import migrations, models$/;"	kind:namespace	line:5
 models	../snippets/models.py	/^from django.db import models$/;"	kind:namespace	line:4
 models.py	../apiAdmin/models.py	1;"	kind:file	line:1
+models.py	../catalog/models.py	1;"	kind:file	line:1
 models.py	../experiments/models.py	1;"	kind:file	line:1
+models.py	../mattress/models.py	1;"	kind:file	line:1
 models.py	../snippets/models.py	1;"	kind:file	line:1
 name	../apiAdmin/apps.py	/^    name = 'apiAdmin'$/;"	kind:variable	line:5
+name	../catalog/apps.py	/^    name = 'catalog'$/;"	kind:variable	line:5
+name	../catalog/migrations/0001_initial.py	/^            name='Author',$/;"	kind:variable	line:21
+name	../catalog/migrations/0001_initial.py	/^            name='Book',$/;"	kind:variable	line:31
+name	../catalog/migrations/0001_initial.py	/^            name='BookInstance',$/;"	kind:variable	line:41
+name	../catalog/migrations/0001_initial.py	/^            name='Genre',$/;"	kind:variable	line:56
+name	../catalog/migrations/0001_initial.py	/^            name='Language',$/;"	kind:variable	line:63
+name	../catalog/migrations/0001_initial.py	/^            name='genre',$/;"	kind:variable	line:71
+name	../catalog/migrations/0001_initial.py	/^            name='language',$/;"	kind:variable	line:76
+name	../catalog/models.py	/^    name = models.CharField($/;"	kind:variable	line:19
+name	../catalog/models.py	/^    name = models.CharField($/;"	kind:variable	line:33
 name	../experiments/apps.py	/^    name = 'experiments'$/;"	kind:variable	line:5
 name	../experiments/migrations/0001_initial.py	/^            name='SimpleEmailMessssage',$/;"	kind:variable	line:17
+name	../mattress/apps.py	/^    name = 'mattress'$/;"	kind:variable	line:5
+name	../mattress/migrations/0001_initial.py	/^            name='Buyer',$/;"	kind:variable	line:22
+name	../mattress/migrations/0001_initial.py	/^            name='OnlineRetailer',$/;"	kind:variable	line:31
+name	../mattress/migrations/0001_initial.py	/^            name='RMA',$/;"	kind:variable	line:68
+name	../mattress/migrations/0001_initial.py	/^            name='Return',$/;"	kind:variable	line:42
+name	../mattress/migrations/0001_initial.py	/^            name='UsAddress',$/;"	kind:variable	line:84
+name	../mattress/migrations/0001_initial.py	/^            name='address',$/;"	kind:variable	line:96
+name	../mattress/models.py	/^    name = models.CharField(max_length=128,$/;"	kind:variable	line:16
 name	../snippets/apps.py	/^    name = 'snippets'$/;"	kind:variable	line:5
 name	../snippets/migrations/0001_initial.py	/^            name='Snippet',$/;"	kind:variable	line:17
 name	../snippets/migrations/0002_auto_20170208_2231.py	/^            name='snippet',$/;"	kind:variable	line:16
@@ -352,16 +561,24 @@ name	../snippets/urls.py	/^        name='snippet-list'),$/;"	kind:variable	line:
 name	../snippets/urls.py	/^        name='snippets-user-detail')$/;"	kind:variable	line:27
 name	../snippets/urls.py	/^        name='snippets-user-list'),$/;"	kind:variable	line:24
 namespace	../_main/urls.py	/^                               namespace='rest_framework')),$/;"	kind:variable	line:50
+operations	../catalog/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:19
 operations	../experiments/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
+operations	../mattress/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:20
 operations	../snippets/migrations/0001_initial.py	/^    operations = [$/;"	kind:variable	line:15
 operations	../snippets/migrations/0002_auto_20170208_2231.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../snippets/migrations/0003_auto_20170208_2246.py	/^    operations = [$/;"	kind:variable	line:14
 operations	../snippets/migrations/0004_auto_20170209_1715.py	/^    operations = [$/;"	kind:variable	line:17
 operations	../snippets/migrations/0005_auto_20170403_2143.py	/^    operations = [$/;"	kind:variable	line:14
+options	../catalog/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:50
 options	../experiments/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:25
 options	../snippets/migrations/0001_initial.py	/^            options={$/;"	kind:variable	line:27
 options	../snippets/migrations/0002_auto_20170208_2231.py	/^            options={},$/;"	kind:variable	line:17
 options	../snippets/migrations/0003_auto_20170208_2246.py	/^            options={'ordering': ('created', 'title')},$/;"	kind:variable	line:17
+order_date	../mattress/models.py	/^    order_date = models.DateField()$/;"	kind:variable	line:132
+order_date	../mattress/models.py	/^    order_date = models.DateField()$/;"	kind:variable	line:91
+order_number	../mattress/models.py	/^    order_number = models.CharField('Order#', max_length=128)$/;"	kind:variable	line:130
+order_number	../mattress/models.py	/^    order_number = models.CharField('Order#', max_length=128)$/;"	kind:variable	line:89
+ordering	../catalog/models.py	/^        ordering = ["due_back"]$/;"	kind:variable	line:112
 ordering	../snippets/models.py	/^        ordering = ('created', 'title')$/;"	kind:variable	line:44
 os	../_main/settings.py	/^import os$/;"	kind:namespace	line:13
 os	../_main/wsgi.py	/^import os$/;"	kind:namespace	line:10
@@ -393,6 +610,7 @@ permission_classes	../snippets/views3.py	/^    permission_classes = (permissions
 permission_classes	../snippets/views4.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,$/;"	kind:variable	line:29
 permission_classes	../snippets/views4.py	/^    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)$/;"	kind:variable	line:20
 permissions	../apiAdmin/views.py	/^from rest_framework import permissions, generics$/;"	kind:namespace	line:6
+permissions	../catalog/models.py	/^        permissions = (("can_mark_returned", "Set book as returned"),)$/;"	kind:variable	line:113
 permissions	../experiments/views.py	/^from rest_framework import permissions$/;"	kind:namespace	line:5
 permissions	../experiments/views_calculator.py	/^from rest_framework import permissions$/;"	kind:namespace	line:7
 permissions	../experiments/views_file.py	/^from rest_framework import permissions$/;"	kind:namespace	line:12
@@ -404,6 +622,8 @@ permissions	../snippets/views2.py	/^from rest_framework import permissions$/;"	k
 permissions	../snippets/views3.py	/^from rest_framework import permissions$/;"	kind:namespace	line:8
 permissions	../snippets/views4.py	/^from rest_framework import permissions$/;"	kind:namespace	line:7
 permissions.py	../security/permissions.py	1;"	kind:file	line:1
+phone	../mattress/models.py	/^    phone = PhoneNumberField()$/;"	kind:variable	line:23
+phone	../mattress/models.py	/^    phone = PhoneNumberField()$/;"	kind:variable	line:55
 post	../experiments/views.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:20
 post	../snippets/views2.py	/^    def post(self, request, format=None):$/;"	kind:member	line:30
 post	../snippets/views3.py	/^    def post(self, request, *args, **kwargs):$/;"	kind:member	line:28
@@ -422,15 +642,25 @@ queryset	../snippets/views3.py	/^    queryset = Snippet.objects.all()$/;"	kind:v
 queryset	../snippets/views4.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:18
 queryset	../snippets/views4.py	/^    queryset = Snippet.objects.all()$/;"	kind:variable	line:27
 read_only	../snippets/serializers.py	/^                                                   read_only=True)$/;"	kind:variable	line:52
+render	../catalog/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
 render	../experiments/views_calculator.py	/^from django.shortcuts import render$/;"	kind:namespace	line:3
 render	../experiments/views_file.py	/^from django.shortcuts import render$/;"	kind:namespace	line:5
+render	../mattress/views.py	/^from django.shortcuts import render$/;"	kind:namespace	line:1
 renderer_classes	../_main/swagger.py	/^    renderer_classes = [$/;"	kind:variable	line:13
 renderer_classes	../snippets/views.py	/^    renderer_classes = (renderers.StaticHTMLRenderer,)$/;"	kind:variable	line:58
 renderers	../_main/swagger.py	/^from rest_framework_swagger import renderers$/;"	kind:namespace	line:8
 renderers	../snippets/views.py	/^from rest_framework import renderers$/;"	kind:namespace	line:11
 required_scopes	../apiAdmin/views.py	/^    required_scopes = ['groups']$/;"	kind:variable	line:69
+retailer	../mattress/models.py	/^    retailer = models.ForeignKey($/;"	kind:variable	line:127
+retailer	../mattress/models.py	/^    retailer = models.ForeignKey($/;"	kind:variable	line:86
+return_authorized	../mattress/models.py	/^    return_authorized = models.BooleanField()$/;"	kind:variable	line:133
+return_authorized	../mattress/models.py	/^    return_authorized = models.BooleanField()$/;"	kind:variable	line:92
 reverse	../apiAdmin/views.py	/^from rest_framework.reverse import reverse$/;"	kind:namespace	line:9
+reverse	../catalog/models.py	/^from django.urls import reverse$/;"	kind:namespace	line:6
+reverse	../mattress/models.py	/^from django.urls import reverse$/;"	kind:namespace	line:2
 reverse	../snippets/views.py	/^from rest_framework.reverse import reverse$/;"	kind:namespace	line:10
+rma_number	../mattress/models.py	/^    rma_number = models.CharField('RMA#', max_length=128)$/;"	kind:variable	line:129
+rma_number	../mattress/models.py	/^    rma_number = models.CharField('RMA#', max_length=128)$/;"	kind:variable	line:88
 router	../apiAdmin/urls.py	/^router = SimpleRouter()$/;"	kind:variable	line:8
 routers	../_main/urls.py	/^from rest_framework import routers$/;"	kind:namespace	line:22
 save	../snippets/models.py	/^    def save(self, *args, **kwargs):$/;"	kind:member	line:30
@@ -456,54 +686,77 @@ serializers.py	../apiAdmin/serializers.py	1;"	kind:file	line:1
 serializers.py	../experiments/serializers.py	1;"	kind:file	line:1
 serializers.py	../snippets/serializers.py	1;"	kind:file	line:1
 settings	../_main/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:18
+settings	../catalog/migrations/0001_initial.py	/^from django.conf import settings$/;"	kind:namespace	line:5
 settings	../experiments/views_calculator.py	/^from django.conf import settings$/;"	kind:namespace	line:5
 settings	../experiments/views_file.py	/^from django.conf import settings$/;"	kind:namespace	line:7
+settings	../mattress/migrations/0001_initial.py	/^from django.conf import settings$/;"	kind:namespace	line:6
 settings	../snippets/migrations/0004_auto_20170209_1715.py	/^from django.conf import settings$/;"	kind:namespace	line:5
 settings	../snippets/urls.py	/^from django.conf import settings$/;"	kind:namespace	line:2
 settings.py	../_main/settings.py	1;"	kind:file	line:1
+size	../mattress/models.py	/^    size = models.CharField(max_length=1, choices=MattressSize.MATTRESS_SIZES,$/;"	kind:variable	line:136
+size	../mattress/models.py	/^    size = models.CharField(max_length=1, choices=MattressSize.MATTRESS_SIZES,$/;"	kind:variable	line:95
 snippet_detail	../snippets/views0.py	/^def snippet_detail(request, pk):$/;"	kind:function	line:47
 snippet_detail	../snippets/views1.py	/^def snippet_detail(request, pk, format=None):$/;"	kind:function	line:51
 snippet_list	../snippets/views0.py	/^def snippet_list(request):$/;"	kind:function	line:27
 snippet_list	../snippets/views1.py	/^def snippet_list(request, format=None):$/;"	kind:function	line:32
 snippets	../snippets/serializers.py	/^    snippets = serializers.HyperlinkedRelatedField(many=True,$/;"	kind:variable	line:50
+state	../mattress/models.py	/^    state = USStateField("State")$/;"	kind:variable	line:39
+status	../catalog/models.py	/^    status = models.CharField(max_length=1, choices=LOAN_STATUS,$/;"	kind:variable	line:108
 status	../experiments/views_calculator.py	/^from rest_framework import status$/;"	kind:namespace	line:8
 status	../experiments/views_file.py	/^from rest_framework import status$/;"	kind:namespace	line:10
 status	../snippets/views1.py	/^from rest_framework import status$/;"	kind:namespace	line:6
 status	../snippets/views2.py	/^from rest_framework import status$/;"	kind:namespace	line:7
 style	../snippets/models.py	/^    style = models.CharField(choices=STYLE_CHOICES,$/;"	kind:variable	line:23
 subject	../experiments/models.py	/^    subject = models.CharField(max_length=256)$/;"	kind:variable	line:7
+summary	../catalog/models.py	/^    summary = models.TextField($/;"	kind:variable	line:52
 swagger.py	../_main/swagger.py	1;"	kind:file	line:1
 swagger_view	../_main/urls.py	/^swagger_view = get_swagger_view(title=settings.API_NAME)$/;"	kind:variable	line:31
 sys	../manage.py	/^import sys$/;"	kind:namespace	line:3
 tests.py	../apiAdmin/tests.py	1;"	kind:file	line:1
+tests.py	../catalog/tests.py	1;"	kind:file	line:1
 tests.py	../experiments/tests.py	1;"	kind:file	line:1
+tests.py	../mattress/tests.py	1;"	kind:file	line:1
 tests.py	../snippets/tests.py	1;"	kind:file	line:1
+title	../catalog/models.py	/^    title = models.CharField(max_length=200)$/;"	kind:variable	line:47
 title	../snippets/models.py	/^    title = models.CharField(max_length=100, blank=True, default='')$/;"	kind:variable	line:18
 to_addrs	../experiments/models.py	/^    to_addrs = models.CharField(max_length=1024)$/;"	kind:variable	line:10
+unicode_literals	../catalog/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../experiments/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	../mattress/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0001_initial.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0002_auto_20170208_2231.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0003_auto_20170208_2246.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0004_auto_20170209_1715.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
 unicode_literals	../snippets/migrations/0005_auto_20170403_2143.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unique	../catalog/models.py	/^import uuid  # Required for unique book instances$/;"	kind:namespace	line:8
 url	../_main/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:16
 url	../apiAdmin/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
+url	../catalog/urls.py	/^from django.conf.urls import url$/;"	kind:namespace	line:1
 url	../experiments/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 url	../snippets/urls.py	/^from django.conf.urls import url, include$/;"	kind:namespace	line:1
 urlpatterns	../_main/urls.py	/^urlpatterns = [$/;"	kind:variable	line:41
 urlpatterns	../apiAdmin/urls.py	/^urlpatterns = [$/;"	kind:variable	line:13
+urlpatterns	../catalog/urls.py	/^urlpatterns = [$/;"	kind:variable	line:6
 urlpatterns	../experiments/urls.py	/^urlpatterns = [$/;"	kind:variable	line:8
 urlpatterns	../snippets/urls.py	/^urlpatterns = [$/;"	kind:variable	line:12
 urls.py	../_main/urls.py	1;"	kind:file	line:1
 urls.py	../apiAdmin/urls.py	1;"	kind:file	line:1
+urls.py	../catalog/urls.py	1;"	kind:file	line:1
 urls.py	../experiments/urls.py	1;"	kind:file	line:1
 urls.py	../snippets/urls.py	1;"	kind:file	line:1
+us	../mattress/migrations/0001_initial.py	/^import localflavor.us.models$/;"	kind:namespace	line:9
+user	../mattress/models.py	/^    user = models.ForeignKey($/;"	kind:variable	line:116
+uuid	../catalog/migrations/0001_initial.py	/^import uuid$/;"	kind:namespace	line:8
+uuid	../catalog/models.py	/^import uuid  # Required for unique book instances$/;"	kind:namespace	line:8
 view_name	../snippets/serializers.py	/^                                                   view_name='snippet-detail',$/;"	kind:variable	line:51
 views	../apiAdmin/urls.py	/^from apiAdmin import views$/;"	kind:namespace	line:5
+views	../catalog/urls.py	/^from . import views$/;"	kind:namespace	line:3
 views	../experiments/urls.py	/^from experiments import views_calculator, views_file, views$/;"	kind:namespace	line:5
 views	../snippets/urls.py	/^from snippets import views$/;"	kind:namespace	line:9
 views.py	../apiAdmin/views.py	1;"	kind:file	line:1
+views.py	../catalog/views.py	1;"	kind:file	line:1
 views.py	../experiments/views.py	1;"	kind:file	line:1
+views.py	../mattress/views.py	1;"	kind:file	line:1
 views.py	../snippets/views.py	1;"	kind:file	line:1
 views0	../snippets/urls.py	/^from snippets import views0$/;"	kind:namespace	line:4
 views0.py	../snippets/views0.py	1;"	kind:file	line:1
@@ -521,5 +774,7 @@ views_file	../experiments/urls.py	/^from experiments import views_calculator, vi
 views_file.py	../experiments/views_file.py	1;"	kind:file	line:1
 views_social.py	../apiAdmin/views_social.py	1;"	kind:file	line:1
 viewsets	../apiAdmin/views.py	/^from rest_framework import serializers, viewsets$/;"	kind:namespace	line:14
+web	../mattress/models.py	/^    web = models.CharField(max_length=128,$/;"	kind:variable	line:18
 wsgi.py	../_main/wsgi.py	1;"	kind:file	line:1
 zip	../experiments/views_file.py	/^def zip(request):$/;"	kind:function	line:40
+zip_code	../mattress/models.py	/^    zip_code = USZipCodeField("Zip Code", max_length=5)$/;"	kind:variable	line:40
